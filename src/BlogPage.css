@@ -1,9 +1,8 @@
-.all_links {
-  background-color: lightblue;
+.all_navbar {
   display: flex;
   justify-content: space-between; /* pushes logo left and links right */
   align-items: center;
-  width: 100%; /* full navbar width */
+  background-color: lightblue;
   padding: 0 40px;
   border: 1px solid black;
   border-radius: 10px;
@@ -13,6 +12,7 @@
   transition: color 0.9s ease;
   cursor: pointer;
   position: relative;
+  margin-left: 20px;
 }
 .link:hover {
   color: lightcoral;
@@ -68,4 +68,14 @@
 .hire_me_button:hover span:after {
   opacity: 1;
   right: 0;
+}
+.hire_me_and_hamburger {
+  display: flex;
+
+  justify-content: space-between;
+}
+.when_burger_isOpen {
+  height: 100%;
+  width: 100%;
+  background-color: #f4511e;
 }
