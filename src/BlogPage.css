@@ -1,0 +1,71 @@
+.all_links {
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-between; /* pushes logo left and links right */
+  align-items: center;
+  width: 100%; /* full navbar width */
+  padding: 0 40px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.link {
+  font-size: 1.25rem;
+  transition: color 0.9s ease;
+  cursor: pointer;
+  position: relative;
+}
+.link:hover {
+  color: lightcoral;
+  transition: color 0.9s ease;
+}
+.link::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  background: red;
+  transition: width 0.9s;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+.hire_me_button {
+  color: "white";
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #f4511e;
+  text-align: center;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.hire_me_button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.hire_me_button span:after {
+  content: "\25BC";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.hire_me_button:hover span {
+  padding-right: 25px;
+}
+
+.hire_me_button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
