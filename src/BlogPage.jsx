@@ -3,7 +3,7 @@ import { useTheme, useMediaQuery } from "@mui/material";
 import { Box, Typography } from "@mui/material";
 import logo from "./assets/img/logo.png";
 import "./BlogPage.css";
-import Hamburger from "hamburger-react";
+import { Sling as Hamburger } from "hamburger-react";
 import { useState } from "react";
 import jalalasadov from "./assets/img/jalalasadov.jpg";
 
@@ -31,7 +31,9 @@ const BlogPage = () => {
           <Box className="hire_me_button">
             <span>Hire me</span>
           </Box>
-          {isMobile && <Hamburger toggled={isOPen} toggle={setIsOpen} />}
+          {isMobile && (
+            <Hamburger easing="ease-in" toggled={isOPen} toggle={setIsOpen} />
+          )}
         </Box>
       </Box>
       <Box className="section_one_box">
