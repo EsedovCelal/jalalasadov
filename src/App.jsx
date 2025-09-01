@@ -1,5 +1,5 @@
 import "./App.css";
-import BlogPage from "./BlogPage";
+import BlogPage from "./container/BlogPage";
 import PageContainer from "./container/PageContainer";
 
 function App() {
