@@ -8,8 +8,8 @@ const Introduction_section = () => {
   return (
     <Box>
       {isOPen && isMobile && list_links}
-      <Box className="section_one_flex_box">
-        <Box className="section_one_texts_box">
+      <Box className="section_one_flex_box ">
+        <Box className="section_one_texts_box ">
           <Typography variant="h5" marginBottom={3}>
             SOFTWARE ENGINEER | FRONT-END WEB DEVELOPER
           </Typography>
@@ -26,7 +26,7 @@ const Introduction_section = () => {
             solutions to real-world problems.
           </Typography>
         </Box>
-        <Box className="section_one_img_box animate-fade-in-left">
+        <Box className="section_one_img_box ">
           <img src={jalalasadov} className="section_one_img" />
         </Box>
       </Box>
