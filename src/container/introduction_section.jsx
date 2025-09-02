@@ -26,7 +26,7 @@ const Introduction_section = () => {
             solutions to real-world problems.
           </Typography>
         </Box>
-        <Box className="section_one_img_box">
+        <Box className="section_one_img_box animate-fade-in-left">
           <img src={jalalasadov} className="section_one_img" />
         </Box>
       </Box>

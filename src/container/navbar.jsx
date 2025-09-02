@@ -9,14 +9,17 @@ const Navbar = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
   const [isOPen, setIsOpen] = useState(false);
+  const styles = {
+    link: "after:content-[''] after:absolute after:h-[2px] after:left-[0] after:bottom-[0] after:w-[0] after:bg-[red] after:[transition:width_0.9s] hover:text-[lightcoral] hover:[transition:color_0.9s_ease] text-[1.25rem] [transition:color_0.9s_ease] cursor-pointer relative ml-[20px] after:absolute after:h-[2px] after:left-[0] after:bottom-[0] after:w-[0] after:bg-[red] after:[transition:width_0.9s] hover:after:w-full",
+  };
   const list_links = (
     <Box className={isMobile ? "when_burger_isOpen" : ""}>
-      <Link className="link">About me</Link>
-      <Link className="link">Experience</Link>
-      <Link className="link">Education</Link>
-      <Link className="link">Projects</Link>
-      <Link className="link">Publications</Link>
-      <Link className="link">Recommendations</Link>
+      <Link className={styles.link}>About me</Link>
+      <Link className={styles.link}>Experience</Link>
+      <Link className={styles.link}>Education</Link>
+      <Link className={styles.link}>Projects</Link>
+      <Link className={styles.link}>Publications</Link>
+      <Link className={styles.link}>Recommendations</Link>
     </Box>
   );
   return (
