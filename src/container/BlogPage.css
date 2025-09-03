@@ -57,22 +57,13 @@
   position: relative;
   z-index: 1;
 }
-.section_one_img {
-  width: 400px;
-  height: 400px;
-}
+
 .section_one_img_box {
   padding: 5px;
   border-radius: 10px;
   position: relative;
   overflow: clip;
   z-index: 20;
-}
-.section_one_img {
-  background-color: #111;
-  border-radius: 10px;
-  position: relative;
-  z-index: 99;
 }
 .section_one_img_box::after {
   content: "";
