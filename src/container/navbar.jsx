@@ -25,7 +25,7 @@ const Navbar = () => {
     </Box>
   );
   return (
-    <Box className="flex justify-between items-center bg-[lightblue] px-[40px] py-[0] border-[1px] border-[solid] border-[black] rounded-[10px]">
+    <Box className="flex justify-between items-center bg-[lightblue] px-[40px] py-[0] border-[1px] border-[black] rounded-[10px]">
       <img src={logo} className="w-[100px] h-[100px]" />
       {!isMobile && list_links}
       <Box className="hire_me_and_hamburger">

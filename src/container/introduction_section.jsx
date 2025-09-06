@@ -5,7 +5,13 @@ import { useSelector } from "react-redux";
 import { motion } from "motion/react";
 import "./BlogPage.css";
 import { useTheme, useMediaQuery } from "@mui/material";
-import { fadeInUp, fadeInDown, fadeInRight, fadeInLeft } from "../tools/motion";
+import {
+  fadeInUp,
+  fadeInDown,
+  fadeInRight,
+  fadeInLeft,
+  underlineVariants,
+} from "../tools/motion";
 
 const Introduction_section = () => {
   const theme = useTheme();
@@ -38,16 +44,16 @@ const Introduction_section = () => {
           >
             SOFTWARE ENGINEER | FRONT-END WEB DEVELOPER
           </motion.div>
-          <motion.h1
+          <motion.spam
             variants={fadeInLeft} // assign the variants
             initial="hidden" // start at "hidden"
             animate="visible" // animate to "visible"
-            className="text-3xl font-bold text-white text-[3.75rem]"
+            className="font-[700] text-white text-[3.75rem]"
           >
             JALAL
             <br />
             ASADOV
-          </motion.h1>
+          </motion.spam>
           <motion.div
             variants={fadeInUp} // assign the variants
             initial="hidden" // start at "hidden"
