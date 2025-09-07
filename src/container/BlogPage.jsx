@@ -1,4 +1,3 @@
-import { Box } from "@mui/material";
 import Navbar from "./navbar";
 import "./BlogPage.css";
 import Introduction_section from "./introduction_section";
@@ -7,16 +6,16 @@ import About_me from "./About_me";
 
 const BlogPage = () => {
   return (
-    <Box>
-      <Box>
+    <div className="bg-[#222831]">
+      <div>
         <Navbar />
-        <Box>
+        <div>
           <Introduction_section />
           <Line_Text />
           <About_me />
-        </Box>
-      </Box>
-    </Box>
+        </div>
+      </div>
+    </div>
   );
 };
 export default BlogPage;

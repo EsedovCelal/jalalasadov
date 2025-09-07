@@ -4,24 +4,28 @@ import { Link } from "react-scroll";
 import { useSelector } from "react-redux";
 import { motion } from "motion/react";
 import "./BlogPage.css";
-import { useTheme, useMediaQuery } from "@mui/material";
-import {
-  fadeInUp,
-  fadeInDown,
-  fadeInRight,
-  fadeInLeft,
-  underlineVariants,
-} from "../tools/motion";
+import { fadeInUp, fadeInDown, fadeInRight, fadeInLeft } from "../tools/motion";
 
 const Introduction_section = () => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
   const isOpen = useSelector((state) => state.menu.isOpen);
   const styles = {
     link: "after:content-[''] after:absolute after:h-[2px] after:left-[0] after:bottom-[0] after:w-[0] after:bg-[red] after:[transition:width_0.9s] hover:text-[lightcoral] hover:[transition:color_0.9s_ease] text-[1.25rem] [transition:color_0.9s_ease] cursor-pointer relative ml-[20px] after:absolute after:h-[2px] after:left-[0] after:bottom-[0] after:w-[0] after:bg-[red] after:[transition:width_0.9s] hover:after:w-full",
+    list_links:
+      "min-[1280px]:hidden flex flex-col items-center justify-evenly h-1/2 w-screen left-[0] absolute z-10 text-[1.25rem] bg-[rgba(255,_255,_255,_0.7)] backdrop-filter backdrop-blur",
+    section_one_flex_box: {
+      marginTop: "50px", // my-[40px]
+      display: "flex",
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "space-between",
+      position: "relative",
+      zIndex: "1",
+      marginBottom: "50px", // my-[40px]
+      width: "70%",
+    },
   };
   const list_links = (
-    <Box className={isMobile && "when_burger_isOpen"}>
+    <Box className={styles.list_links}>
       <Link className={styles.link}>About me</Link>
       <Link className={styles.link}>Experience</Link>
       <Link className={styles.link}>Education</Link>
@@ -31,15 +35,15 @@ const Introduction_section = () => {
     </Box>
   );
   return (
-    <Box>
+    <Box className="flex justify-center">
       {isOpen && list_links}
-      <Box className="section_one_flex_box ">
+      <Box style={styles.section_one_flex_box}>
         <Box className="section_one_texts_box ">
           <motion.div
             variants={fadeInDown} // assign the variants
             initial="hidden" // start at "hidden"
             animate="visible" // animate to "visible"
-            className="text-3xl font-bold text-white text-[1.5rem]"
+            className="text-3xl font-bold text-[#EEEEEE] text-[1.5rem]"
             marginBottom={3}
           >
             SOFTWARE ENGINEER | FRONT-END WEB DEVELOPER
@@ -48,7 +52,7 @@ const Introduction_section = () => {
             variants={fadeInLeft} // assign the variants
             initial="hidden" // start at "hidden"
             animate="visible" // animate to "visible"
-            className="font-[700] text-white text-[3.75rem]"
+            className="font-[700] text-[#EEEEEE] text-[3.75rem]"
           >
             JALAL
             <br />
@@ -58,7 +62,7 @@ const Introduction_section = () => {
             variants={fadeInUp} // assign the variants
             initial="hidden" // start at "hidden"
             animate="visible" // animate to "visible"
-            className="text-white text-[1.5rem] text-base leading-normal"
+            className="text-[#EEEEEE] text-[1.5rem] text-base leading-normal"
           >
             Merit graduate of TUM (22nd worldwide) with publications in ACM and
             Springer JITT. Creator of the internationally recognized Green

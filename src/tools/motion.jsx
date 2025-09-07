@@ -65,8 +65,3 @@ export const bounce = {
     transition: { duration: 0.5, repeat: Infinity },
   },
 };
-
-export const underlineVariants = {
-  hidden: { scaleX: 0 },
-  hover: { scaleX: 1, transition: { duration: 0.4, ease: "easeInOut" } },
-};
