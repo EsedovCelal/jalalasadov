@@ -1,13 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/container/**/*.{jsx,ts,tsx}", "./src/**/*.{jsx,ts,tsx}"],
+  darkMode: "class",
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    screens: {
-      sm: "350px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1280px",
-      "2xl": "1536px",
+    extend: {
+      keyframes: {
+        bgmove: {
+          "0%": { backgroundPosition: "0 0" },
+          "100%": { backgroundPosition: "0 100%" }, // match your bg-size for smooth repeat
+        },
+      },
+      animation: {
+        bgmove: "bgmove 40s infinite",
+      },
     },
   },
+  plugins: [],
 };

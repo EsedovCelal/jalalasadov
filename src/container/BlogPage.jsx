@@ -6,7 +6,14 @@ import About_me from "./About_me";
 
 const BlogPage = () => {
   return (
-    <div className="bg-[#222831]">
+    <div
+      className="min-h-screen flex items-center
+         bg-[#010e28]
+         bg-[length:30px_30px]
+         bg-[linear-gradient(to_bottom,#082740_1px,transparent_1px),linear-gradient(to_right,#082740_1px,transparent_1px)]
+         bg-repeat
+         animate-bgmove"
+    >
       <div>
         <Navbar />
         <div>

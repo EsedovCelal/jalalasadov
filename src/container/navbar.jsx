@@ -13,6 +13,7 @@ const Navbar = () => {
   const list_links = (
     <div className="max-[1280px]:hidden">
       <Link className={styles.link}>About me</Link>
+      <Link className={styles.link}>Skills</Link>
       <Link className={styles.link}>Experience</Link>
       <Link className={styles.link}>Education</Link>
       <Link className={styles.link}>Projects</Link>

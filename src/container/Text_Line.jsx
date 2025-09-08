@@ -1,7 +1,7 @@
 import "../index.css";
 const Line_Text = () => {
   return (
-    <div className="bg-[#00ADB5] flex justify-center">
+    <div className="bg-[#00ADB5] flex justify-center text-[#EEEEEE]">
       <div className="flex justify-between text-[1.8rem] h-[120px] border-radius-[20px] items-center w-[80%]">
         <p>FAST LEANER</p>
         <p>RESULT- DRIVEN</p>
