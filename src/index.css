@@ -1,5 +1,22 @@
-@import "tailwindcss/preflight";
-@import "tailwindcss/utilities";
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animation və theme burda */
+@keyframes bgmove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+@theme {
+  --animate-bgmove: bgmove 40s infinite;
+}
 
 img {
   max-width: none;
