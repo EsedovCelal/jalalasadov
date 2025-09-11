@@ -1,6 +1,6 @@
 import Navbar from "./navbar";
 import "./BlogPage.css";
-import Introduction_section from "./introduction_section";
+import Home from "./Home";
 import Line_Text from "./Text_Line";
 import About_me from "./About_me";
 
@@ -17,7 +17,7 @@ const BlogPage = () => {
       <div>
         <Navbar />
         <div>
-          <Introduction_section />
+          <Home />
           <Line_Text />
           <About_me />
         </div>
