@@ -1,44 +1,27 @@
 import jalalasadov from "../assets/img/jalalasadov.jpg";
 import { Box } from "@mui/material";
-import { Link } from "react-scroll";
-import { useSelector } from "react-redux";
 import { motion } from "motion/react";
 import "./BlogPage.css";
 import { fadeInUp, fadeInDown, fadeInRight, fadeInLeft } from "../tools/motion";
 import { Element } from "react-scroll";
 
 const Home = () => {
-  const isOpen = useSelector((state) => state.menu.isOpen);
   const styles = {
-    link: "after:content-[''] after:absolute after:h-[2px] after:left-[0] after:bottom-[0] after:w-[0] after:bg-[red] after:[transition:width_0.9s] hover:text-[lightcoral] hover:[transition:color_0.9s_ease] text-[1.25rem] [transition:color_0.9s_ease] cursor-pointer relative ml-[20px] after:absolute after:h-[2px] after:left-[0] after:bottom-[0] after:w-[0] after:bg-[red] after:[transition:width_0.9s] hover:after:w-full",
-    list_links:
-      "min-[1280px]:hidden flex flex-col items-center justify-evenly h-1/2 w-screen left-[0] absolute z-10 text-[1.25rem] bg-[rgba(255,_255,_255,_0.7)] backdrop-filter backdrop-blur",
     section_one_flex_box: {
-      marginTop: "50px", // my-[40px]
+      marginTop: "50px", // my-[50px]
       display: "flex",
       flexDirection: "row",
       alignItems: "center",
       justifyContent: "space-between",
       position: "relative",
       zIndex: "1",
-      marginBottom: "50px", // my-[40px]
-      width: "70%",
+      marginBottom: "50px", // my-[50px]
+      width: "80%",
     },
   };
-  const list_links = (
-    <Box className={styles.list_links}>
-      <Link className={styles.link}>About me</Link>
-      <Link className={styles.link}>Experience</Link>
-      <Link className={styles.link}>Education</Link>
-      <Link className={styles.link}>Projects</Link>
-      <Link className={styles.link}>Publications</Link>
-      <Link className={styles.link}>Recommendations</Link>
-    </Box>
-  );
   return (
     <Element name="Home">
-      <Box className="flex justify-center">
-        {isOpen && list_links}
+      <Box className="flex justify-center mt-20">
         <Box style={styles.section_one_flex_box}>
           <Box className="section_one_texts_box ">
             <motion.div

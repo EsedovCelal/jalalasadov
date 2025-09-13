@@ -5,8 +5,8 @@ import { Element } from "react-scroll";
 const About_me = () => {
   return (
     <Element name="About me">
-      <div className="flex justify-center my-[40px] ">
-        <div className="flex justify-between w-[70%] h-[500px]">
+      <div className="flex justify-center my-[40px]">
+        <div className="flex justify-between w-[80%] h-[500px]">
           <motion.div
             variants={fadeInLeft}
             initial="hidden"

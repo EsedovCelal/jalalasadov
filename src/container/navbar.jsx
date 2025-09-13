@@ -8,14 +8,28 @@ const Navbar = () => {
   const dispatch = useDispatch();
   const isOpen = useSelector((state) => state.menu.isOpen);
   const styles = {
-    link: "text-[#EEEEEE] after:content-[''] after:absolute after:h-[2px] after:left-[0] after:bottom-[0] after:w-[0] after:bg-[red] after:[transition:width_0.9s] hover:text-[#00ADB5] hover:[transition:color_0.9s_ease] text-[1.25rem] [transition:color_0.9s_ease] cursor-pointer relative ml-[20px] after:absolute after:h-[2px] after:left-[0] after:bottom-[0] after:w-[0] after:bg-[#00ADB5] after:[transition:width_0.9s] hover:after:w-full",
+    link: "text-[#EEEEEE] ml-5 cursor-pointer text-[1.25rem] relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-current after:scale-x-0 after:origin-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-left",
+    hamburger_links:
+      "min-[1280px]:hidden min-h-[400px] flex flex-col mt-30 items-center justify-evenly h-1/2 w-screen left-[0] absolute z-10 text-[1.25rem] bg-[rgba(255,_255,_255,_0.7)] backdrop-filter backdrop-blur",
   };
   const list_links = (
     <div className="max-[1280px]:hidden">
-      <Link to="About me" smooth={true} duration={900} className={styles.link}>
+      <Link
+        to="About me"
+        smooth={true}
+        duration={900}
+        className={styles.link}
+        offset={-90}
+      >
         About me
       </Link>
-      <Link to="Skills" smooth={true} duration={900} className={styles.link}>
+      <Link
+        to="Skills"
+        smooth={true}
+        duration={900}
+        className={styles.link}
+        offset={-90}
+      >
         Skills
       </Link>
       <Link
@@ -50,13 +64,22 @@ const Navbar = () => {
       </Link>
     </div>
   );
+  const hamburger_is_open = (
+    <div className={styles.hamburger_links}>
+      <Link className={styles.link}>About me</Link>
+      <Link className={styles.link}>Experience</Link>
+      <Link className={styles.link}>Education</Link>
+      <Link className={styles.link}>Projects</Link>
+      <Link className={styles.link}>Publications</Link>
+      <Link className={styles.link}>Recommendations</Link>
+    </div>
+  );
   return (
-    <div className="flex justify-center">
-      <div className="w-[70%] flex justify-between items-center px-[40px] py-[0] border-[1px] border-[#00ADB5] rounded-[10px] mt-[5px]">
-        <Link to="Home">
-          <img src={logo} className="w-[100px] h-[100px]" />
+    <div className="flex justify-center fixed top-0 left-0 w-full z-50">
+      <div className="w-[80%] backdrop-blur-md flex justify-between items-center px-[40px] py-[0] border-[1px] border-indigo-600 rounded-[10px] mt-[5px]">
+        <Link to="Home" smooth={true} duration={900} offset={-90}>
+          <img src={logo} className="w-[100px] h-[100px] cursor-pointer" />
         </Link>
-
         {list_links}
         <div className="flex justify-between">
           <a
@@ -107,6 +130,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      {isOpen && hamburger_is_open}
     </div>
   );
 };
