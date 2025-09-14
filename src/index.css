@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @tailwind utilities;
 
-/* Custom animation və theme burda */
 @keyframes bgmove {
   0% {
     background-position: 0 0;
@@ -13,22 +12,4 @@
 
 @theme {
   --animate-bgmove: bgmove 40s infinite;
-}
-
-img {
-  max-width: none;
-}
-
-.img_about_me {
-  --_g: 10%/45% 45% no-repeat conic-gradient(#000 0 0);
-  mask: left var(--_i) top var(--_g), bottom var(--_i) left var(--_g),
-    top var(--_i) right var(--_g), right var(--_i) bottom var(--_g);
-  filter: grayscale();
-  transition: 0.3s linear;
-  height: 400px;
-  width: 400px;
-}
-.img_about_me:hover {
-  --_i: 10%;
-  filter: grayscale(0);
 }

@@ -17,7 +17,7 @@ const About_me = () => {
             variants={fadeInLeft}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
-            className="flex flex-col place-content-around mr-[40px]"
+            className="flex flex-col place-content-around mr-[40px] w-[60%]"
           >
             <span className="text-[3.25rem] text-[#EEEEEE] capitalize">
               about me
@@ -43,7 +43,7 @@ const About_me = () => {
               challenges where I can apply my adaptability and drive to create
               lasting technological impact.
             </h1>
-            <button className="h-[40px] w-[150px] cursor-pointer text-[#EEEEEE] outline-[#EEEEEE] bg-[#00ADB5] outline-1 rounded-[5px]">
+            <button className="h-[40px] w-[150px] cursor-pointer text-[#EEEEEE] outline-[#EEEEEE] bg-[#4ecdc4] outline-1 rounded-[5px]">
               my projects
             </button>
           </motion.div>
