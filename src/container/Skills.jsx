@@ -4,7 +4,7 @@ import computer from "../assets/img/computer.jpg";
 const Skills = () => {
   return (
     <Element name="Skills">
-      <div className="flex justify-center h-[600px]">
+      <div className="flex justify-center h-[500px]">
         <div className="w-[60%]">
           <div>
             <motion.div className="mb-[50px]">
@@ -20,8 +20,8 @@ const Skills = () => {
             </motion.div>
           </div>
           <div className="w-full border-2 border-gray-300"></div>
-          <div className="flex flex-row max-h-[900px]">
-            <motion.div className="my-[20px]">
+          <div className="flex flex-row max-h-[600px]">
+            <motion.div className="flex flex-col justify-between my-[20px]">
               <div>
                 <p className="text-[white] underline text-[20px] mb-[10px]">
                   Software Engineering & Design
@@ -51,7 +51,7 @@ const Skills = () => {
                 </p>
               </div>
             </motion.div>
-            <motion.div className="my-[20px]">
+            <motion.div className=" my-[20px]">
               <div>
                 <p className="text-[white] underline text-[20px] mb-[10px]">
                   Programming Languages
@@ -82,6 +82,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
+      <div></div>
       <div className="w-full h-[90px]">
         <div className="w-full border-2 border-gray-300"></div>
         <img

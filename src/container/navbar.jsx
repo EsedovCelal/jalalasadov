@@ -8,12 +8,12 @@ const Navbar = () => {
   const dispatch = useDispatch();
   const isOpen = useSelector((state) => state.menu.isOpen);
   const styles = {
-    link: "text-[#EEEEEE] ml-5 cursor-pointer text-[1.25rem] relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-current after:scale-x-0 after:origin-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-left",
-    hamburger_links:
-      "min-[1280px]:hidden min-h-[400px] flex flex-col mt-30 items-center justify-evenly h-1/2 w-screen left-[0] absolute z-10 text-[1.25rem] bg-[rgba(255,_255,_255,_0.7)] backdrop-filter backdrop-blur",
+    link: "text-[#EEEEEE] max-[1280px]:text-[black] ml-5 cursor-pointer text-[1.25rem] relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-current after:scale-x-0 after:origin-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-left",
+    links_when_hamburger_is_open:
+      "text-black min-[1280px]:hidden min-h-[400px] flex flex-col mt-30 items-center justify-evenly h-1/2 w-screen left-[0] absolute z-10 text-[1.25rem] bg-[rgba(255,_255,_255,_0.7)] backdrop-filter backdrop-blur",
   };
   const list_links = (
-    <div className="max-[1280px]:hidden">
+    <>
       <Link
         to="About me"
         smooth={true}
@@ -37,13 +37,26 @@ const Navbar = () => {
         smooth={true}
         duration={900}
         className={styles.link}
+        offset={-90}
       >
         Experience
       </Link>
-      <Link to="Education" smooth={true} duration={900} className={styles.link}>
+      <Link
+        to="Education"
+        smooth={true}
+        duration={900}
+        className={styles.link}
+        offset={-90}
+      >
         Education
       </Link>
-      <Link to="Projects" smooth={true} duration={900} className={styles.link}>
+      <Link
+        to="Projects"
+        smooth={true}
+        duration={900}
+        className={styles.link}
+        offset={-90}
+      >
         Projects
       </Link>
       <Link
@@ -51,6 +64,7 @@ const Navbar = () => {
         smooth={true}
         duration={900}
         className={styles.link}
+        offset={-90}
       >
         Publications
       </Link>
@@ -59,28 +73,20 @@ const Navbar = () => {
         smooth={true}
         duration={900}
         className={styles.link}
+        offset={-90}
       >
         Recommendations
       </Link>
-    </div>
+    </>
   );
-  const hamburger_is_open = (
-    <div className={styles.hamburger_links}>
-      <Link className={styles.link}>About me</Link>
-      <Link className={styles.link}>Experience</Link>
-      <Link className={styles.link}>Education</Link>
-      <Link className={styles.link}>Projects</Link>
-      <Link className={styles.link}>Publications</Link>
-      <Link className={styles.link}>Recommendations</Link>
-    </div>
-  );
+
   return (
     <div className="flex justify-center fixed top-0 left-0 w-full z-50">
       <div className="w-[80%] backdrop-blur-md flex justify-between items-center px-[40px] py-[0] border-[1px] border-indigo-600 rounded-[10px] mt-[5px]">
         <Link to="Home" smooth={true} duration={900} offset={-90}>
           <img src={logo} className="w-[100px] h-[100px] cursor-pointer" />
         </Link>
-        {list_links}
+        <div className="max-[1280px]:hidden">{list_links}</div>
         <div className="flex justify-between">
           <a
             href="#_"
@@ -95,9 +101,9 @@ const Navbar = () => {
                 viewBox="0 0 24 24"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M14 5l7 7m0 0l-7 7m7-7H3"
                 ></path>
               </svg>
@@ -110,9 +116,9 @@ const Navbar = () => {
                 viewBox="0 0 24 24"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M14 5l7 7m0 0l-7 7m7-7H3"
                 ></path>
               </svg>
@@ -126,11 +132,15 @@ const Navbar = () => {
               easing="ease-in"
               toggled={isOpen} // control the toggle state
               toggle={() => dispatch(toggleMenu())}
+              color="#EEEEEE"
             />
           </div>
         </div>
       </div>
-      {isOpen && hamburger_is_open}
+
+      {isOpen && (
+        <div className={styles.links_when_hamburger_is_open}>{list_links}</div>
+      )}
     </div>
   );
 };

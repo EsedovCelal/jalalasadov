@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import "./BlogPage.css";
 import { fadeInUp, fadeInDown, fadeInRight, fadeInLeft } from "../tools/motion";
 import { Element } from "react-scroll";
+import { useInView } from "react-intersection-observer";
 
 const Home = () => {
   const styles = {
@@ -19,6 +20,10 @@ const Home = () => {
       width: "80%",
     },
   };
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.3, // 30% animation will start
+  });
   return (
     <Element name="Home">
       <Box className="flex justify-center mt-20">
@@ -26,33 +31,30 @@ const Home = () => {
           <Box className="section_one_texts_box ">
             <motion.div
               variants={fadeInDown} // assign the variants
+              ref={ref}
               initial="hidden" // start at "hidden"
-              animate="visible" // animate to "visible"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.7 }}
+              animate={inView ? "visible" : "hidden"}
               className="text-3xl font-bold text-[#EEEEEE] text-[1.5rem]"
               marginBottom={3}
             >
               SOFTWARE ENGINEER | FRONT-END WEB DEVELOPER
             </motion.div>
-            <motion.spam
-              variants={fadeInLeft} // assign the variants
+            <motion.div
+              ref={ref}
               initial="hidden" // start at "hidden"
-              animate="visible" // animate to "visible"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.7 }}
+              animate={inView ? "visible" : "hidden"}
+              variants={fadeInLeft} // assign the variants
               className="font-[700] text-[#EEEEEE] text-[3.75rem]"
             >
               JALAL
               <br />
               ASADOV
-            </motion.spam>
+            </motion.div>
             <motion.div
+              ref={ref}
               variants={fadeInUp} // assign the variants
               initial="hidden" // start at "hidden"
-              animate="visible" // animate to "visible"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.7 }}
+              animate={inView ? "visible" : "hidden"}
               className="text-[#EEEEEE] text-[1.5rem] text-base leading-normal"
             >
               Merit graduate of TUM (22nd worldwide) with publications in ACM
@@ -63,11 +65,10 @@ const Home = () => {
             </motion.div>
           </Box>
           <motion.div
+            ref={ref}
             variants={fadeInRight} // assign the variants
             initial="hidden" // start at "hidden"
-            animate="visible" // animate to "visible"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.7 }}
+            animate={inView ? "visible" : "hidden"}
             className="section_one_img_box "
           >
             <img
