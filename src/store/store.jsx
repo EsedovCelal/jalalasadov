@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import menuReducer from "./menuSlice";
+import langReducer from "./langSlice"; // 👈 import your language reducer
 
 export const store = configureStore({
   reducer: {
-    menu: menuReducer,
+    lang: langReducer, // 👈 add it here
   },
 });

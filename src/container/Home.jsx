@@ -7,19 +7,6 @@ import { Element } from "react-scroll";
 import { useInView } from "react-intersection-observer";
 
 const Home = () => {
-  const styles = {
-    section_one_flex_box: {
-      marginTop: "50px", // my-[50px]
-      display: "flex",
-      flexDirection: "row",
-      alignItems: "center",
-      justifyContent: "space-between",
-      position: "relative",
-      zIndex: "1",
-      marginBottom: "50px", // my-[50px]
-      width: "80%",
-    },
-  };
   const { ref, inView } = useInView({
     triggerOnce: false,
     threshold: 0.3, // 30% animation will start
@@ -27,7 +14,7 @@ const Home = () => {
   return (
     <Element name="Home">
       <Box className="flex justify-center mt-20">
-        <Box style={styles.section_one_flex_box}>
+        <Box className="my-[50px] flex flex-row items-center justify-between relative z-[1] max-w-[1300px]">
           <Box className="section_one_texts_box ">
             <motion.div
               variants={fadeInDown} // assign the variants

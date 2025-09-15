@@ -2,91 +2,30 @@ import { Sling as Hamburger } from "hamburger-react";
 import logo from "../assets/img/logo.png";
 import { Link } from "react-scroll";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleMenu } from "../store/menuSlice";
+import { setLang } from "../store/langSlice";
+import ScrollLinks from "./ScrollLinks";
+import { useState } from "react";
 
 const Navbar = () => {
   const dispatch = useDispatch();
-  const isOpen = useSelector((state) => state.menu.isOpen);
+  const lang = useSelector((state) => {
+    state.lang.islang;
+  });
+  console.log(lang);
+  const [isOpen, setOpen] = useState(false);
   const styles = {
-    link: "text-[#EEEEEE] max-[1280px]:text-[black] ml-5 cursor-pointer text-[1.25rem] relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-current after:scale-x-0 after:origin-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-left",
     links_when_hamburger_is_open:
       "text-black min-[1280px]:hidden min-h-[400px] flex flex-col mt-30 items-center justify-evenly h-1/2 w-screen left-[0] absolute z-10 text-[1.25rem] bg-[rgba(255,_255,_255,_0.7)] backdrop-filter backdrop-blur",
   };
-  const list_links = (
-    <>
-      <Link
-        to="About me"
-        smooth={true}
-        duration={900}
-        className={styles.link}
-        offset={-90}
-      >
-        About me
-      </Link>
-      <Link
-        to="Skills"
-        smooth={true}
-        duration={900}
-        className={styles.link}
-        offset={-90}
-      >
-        Skills
-      </Link>
-      <Link
-        to="Experience"
-        smooth={true}
-        duration={900}
-        className={styles.link}
-        offset={-90}
-      >
-        Experience
-      </Link>
-      <Link
-        to="Education"
-        smooth={true}
-        duration={900}
-        className={styles.link}
-        offset={-90}
-      >
-        Education
-      </Link>
-      <Link
-        to="Projects"
-        smooth={true}
-        duration={900}
-        className={styles.link}
-        offset={-90}
-      >
-        Projects
-      </Link>
-      <Link
-        to="Publications"
-        smooth={true}
-        duration={900}
-        className={styles.link}
-        offset={-90}
-      >
-        Publications
-      </Link>
-      <Link
-        to="Recommendations"
-        smooth={true}
-        duration={900}
-        className={styles.link}
-        offset={-90}
-      >
-        Recommendations
-      </Link>
-    </>
-  );
-
   return (
     <div className="flex justify-center fixed top-0 left-0 w-full z-50">
-      <div className="w-[80%] backdrop-blur-md flex justify-between items-center px-[40px] py-[0] border-[1px] border-indigo-600 rounded-[10px] mt-[5px]">
+      <div className="w-full mx-auto max-w-[1300px] backdrop-blur-md flex justify-between items-center px-[40px] py-[0] border-[1px] border-indigo-600 rounded-[10px] mt-[5px]">
         <Link to="Home" smooth={true} duration={900} offset={-90}>
           <img src={logo} className="w-[100px] h-[100px] cursor-pointer" />
         </Link>
-        <div className="max-[1280px]:hidden">{list_links}</div>
+        <div className="max-[1280px]:hidden">
+          <ScrollLinks />
+        </div>
         <div className="flex justify-between">
           <a
             href="#_"
@@ -131,15 +70,33 @@ const Navbar = () => {
             <Hamburger
               easing="ease-in"
               toggled={isOpen} // control the toggle state
-              toggle={() => dispatch(toggleMenu())}
+              toggle={setOpen} /* () => dispatch(toggleMenu()) */
               color="#EEEEEE"
             />
           </div>
+          <div>
+            <button
+              value="ENG"
+              onClick={(e) => dispatch(setLang(e.target.value))}
+              className="text-[white]"
+            >
+              ENG
+            </button>
+            /
+            <button
+              value="AZE"
+              onClick={(e) => dispatch(setLang(e.target.value))}
+              className="text-[white]"
+            >
+              AZE
+            </button>
+          </div>
         </div>
       </div>
-
       {isOpen && (
-        <div className={styles.links_when_hamburger_is_open}>{list_links}</div>
+        <div className={styles.links_when_hamburger_is_open}>
+          <ScrollLinks />
+        </div>
       )}
     </div>
   );

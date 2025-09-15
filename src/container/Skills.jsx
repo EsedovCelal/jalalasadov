@@ -11,7 +11,7 @@ const Skills = () => {
   return (
     <Element name="Skills">
       <div className="flex justify-center max-h-[600px]">
-        <div className="w-[60%]">
+        <div className="max-w-[1100px] mx-auto w-full">
           <motion.div
             ref={ref}
             variants={fadeInUp}

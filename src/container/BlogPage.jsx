@@ -5,6 +5,7 @@ import Line_Text from "./Text_Line";
 import About_me from "./About_me";
 import Skills from "./Skills";
 import Experience from "./Experience";
+import Footer from "./Footer";
 
 const BlogPage = () => {
   return (
@@ -24,6 +25,7 @@ const BlogPage = () => {
           <About_me />
           <Skills />
           <Experience />
+          <Footer />
         </div>
       </div>
     </div>
