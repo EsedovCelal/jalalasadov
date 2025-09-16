@@ -9,7 +9,7 @@ import { useState } from "react";
 const Navbar = () => {
   const dispatch = useDispatch();
   const language = useSelector((state) => state.language.defaultlanguage);
-  console.log(language && "ENG" && "red");
+  console.log(language);
   const [isOpen, setOpen] = useState(false);
   const styles = {
     links_when_hamburger_is_open:
@@ -74,19 +74,23 @@ const Navbar = () => {
           </div>
           <div className="text-[white]">
             <button
-              value="ENG"
+              value="az"
               onClick={(e) => dispatch(setlanguage(e.target.value))}
-              className={`cursor-pointer text-[${language === "ENG" && "red"}]`}
+              className={`cursor-pointer ${
+                language === "AZ" ? `text-[red]` : `text-[white]`
+              }`}
             >
-              ENG
+              AZ
             </button>
             /
             <button
-              value="AZE"
+              value="en"
               onClick={(e) => dispatch(setlanguage(e.target.value))}
-              className={`cursor-pointer text-[${language === "AZE" && "red"}]`}
+              className={`cursor-pointer ${
+                language === "EN" ? `text-[red]` : `text-[white]`
+              }`}
             >
-              AZE
+              EN
             </button>
           </div>
         </div>

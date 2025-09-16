@@ -1,5 +1,10 @@
 import { Link } from "react-scroll";
+import { useSelector } from "react-redux";
+import translations from "../translations";
+
 const ScrollLinks = () => {
+  const language = useSelector((state) => state.language.defaultlanguage);
+  console.log(translations[language]["scroll_links"]["About_me"]);
   const styles = {
     link: "text-[#EEEEEE] max-[1280px]:text-[black] ml-5 cursor-pointer text-[1.25rem] relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-current after:scale-x-0 after:origin-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-left",
   };
@@ -12,7 +17,7 @@ const ScrollLinks = () => {
         className={styles.link}
         offset={-90}
       >
-        About me
+        {translations[language]["scroll_links"]["About_me"]}
       </Link>
       <Link
         to="Skills"
@@ -21,7 +26,7 @@ const ScrollLinks = () => {
         className={styles.link}
         offset={-90}
       >
-        Skills
+        {translations[language]["scroll_links"]["Skills"]}
       </Link>
       <Link
         to="Experience"
@@ -30,7 +35,7 @@ const ScrollLinks = () => {
         className={styles.link}
         offset={-90}
       >
-        Experience
+        {translations[language]["scroll_links"]["Experience"]}
       </Link>
       <Link
         to="Education"
@@ -39,7 +44,7 @@ const ScrollLinks = () => {
         className={styles.link}
         offset={-90}
       >
-        Education
+        {translations[language]["scroll_links"]["Education"]}
       </Link>
       <Link
         to="Projects"
@@ -48,7 +53,7 @@ const ScrollLinks = () => {
         className={styles.link}
         offset={-90}
       >
-        Projects
+        {translations[language]["scroll_links"]["Projects"]}
       </Link>
       <Link
         to="Publications"
@@ -57,7 +62,7 @@ const ScrollLinks = () => {
         className={styles.link}
         offset={-90}
       >
-        Publications
+        {translations[language]["scroll_links"]["Publications"]}
       </Link>
       <Link
         to="Recommendations"
@@ -66,7 +71,7 @@ const ScrollLinks = () => {
         className={styles.link}
         offset={-90}
       >
-        Recommendations
+        {translations[language]["scroll_links"]["Recommendations"]}
       </Link>
     </>
   );
