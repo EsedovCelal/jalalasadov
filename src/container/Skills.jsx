@@ -10,7 +10,7 @@ const Skills = () => {
   });
   return (
     <Element name="Skills">
-      <div className="flex justify-center max-h-[600px]">
+      <div className="flex justify-center max-h-[600px] text-[white] ">
         <div className="max-w-[1100px] mx-auto w-full">
           <motion.div
             ref={ref}
@@ -19,8 +19,8 @@ const Skills = () => {
             animate={inView ? "visible" : "hidden"}
             className="mb-[50px]"
           >
-            <h1 className="text-[white] text-center text-[50px]">Skills</h1>
-            <p className="text-[white]">
+            <h1 className="text-center text-[50px]">Skills</h1>
+            <p>
               Comprehensive skill set spanning full-stack development, cloud
               infrastructure, distributed systems, and modern software design.
               Proficient in key programming languages, frameworks, and
@@ -39,10 +39,10 @@ const Skills = () => {
           >
             <div className="flex flex-col justify-between my-[20px]">
               <div>
-                <p className="text-[white] underline text-[20px] mb-[10px]">
+                <p className="underline text-[20px] mb-[10px]">
                   Software Engineering & Design
                 </p>
-                <p className="text-[white]">
+                <p>
                   OOP, System Design, Software Design Patterns, Algorithms &
                   Data Structures, RESTful API Design, Microservices
                   Architecture, Agile Development, Continuous
@@ -50,49 +50,45 @@ const Skills = () => {
                 </p>
               </div>
               <div>
-                <p className="text-[white] underline text-[20px] mb-[10px]">
+                <p className="underline text-[20px] mb-[10px]">
                   Cloud & DevOps
                 </p>
-                <p className="text-[white]">
-                  AWS, Docker, Airflow, CI/CD (Bamboo, GitHub Actions), Git
-                </p>
+                <p>AWS, Docker, Airflow, CI/CD (Bamboo, GitHub Actions), Git</p>
               </div>
               <div>
-                <p className="text-[white] underline text-[20px] mb-[10px]">
+                <p className="underline text-[20px] mb-[10px]">
                   Blockchain & Distributed Systems
                 </p>
-                <p className="text-[white]">
+                <p>
                   Smart Contracts, Blockchain Fundamentals, Distributed System
                   Design, Consensus Algorithms
                 </p>
               </div>
             </div>
-            <div className=" my-[20px]">
+            <div>
               <div>
-                <p className="text-[white] underline text-[20px] mb-[10px]">
+                <p className="underline text-[20px] mb-[10px]">
                   Programming Languages
                 </p>
-                <p className="text-[white]">
+                <p>
                   Java, JavaScript, TypeScript, C#, Python, SQL (MySQL,
                   PostgreSQL), NoSQL (MongoDB)
                 </p>
               </div>
               <div>
-                <p className="text-[white] underline text-[20px] mb-[10px]">
+                <p className="underline text-[20px] mb-[10px]">
                   Frameworks & Libraries
                 </p>
-                <p className="text-[white]">
+                <p>
                   React, React Native, Angular, Node.js, Spring Boot, Material
                   UI
                 </p>
               </div>
               <div>
-                <p className="text-[white] underline text-[20px] mb-[10px]">
+                <p className="underline text-[20px] mb-[10px]">
                   Testing & Automation
                 </p>
-                <p className="text-[white]">
-                  JUnit, Automated Testing, Code Quality Tools
-                </p>
+                <p>JUnit, Automated Testing, Code Quality Tools</p>
               </div>
             </div>
           </motion.div>

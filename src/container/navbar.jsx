@@ -2,16 +2,14 @@ import { Sling as Hamburger } from "hamburger-react";
 import logo from "../assets/img/logo.png";
 import { Link } from "react-scroll";
 import { useDispatch, useSelector } from "react-redux";
-import { setLang } from "../store/langSlice";
+import { setlanguage } from "../store/langSlice";
 import ScrollLinks from "./ScrollLinks";
 import { useState } from "react";
 
 const Navbar = () => {
   const dispatch = useDispatch();
-  const lang = useSelector((state) => {
-    state.lang.islang;
-  });
-  console.log(lang);
+  const language = useSelector((state) => state.language.defaultlanguage);
+  console.log(language && "ENG" && "red");
   const [isOpen, setOpen] = useState(false);
   const styles = {
     links_when_hamburger_is_open:
@@ -69,24 +67,24 @@ const Navbar = () => {
           <div className=" min-[1280px]:hidden">
             <Hamburger
               easing="ease-in"
-              toggled={isOpen} // control the toggle state
-              toggle={setOpen} /* () => dispatch(toggleMenu()) */
+              toggled={isOpen}
+              toggle={setOpen}
               color="#EEEEEE"
             />
           </div>
-          <div>
+          <div className="text-[white]">
             <button
               value="ENG"
-              onClick={(e) => dispatch(setLang(e.target.value))}
-              className="text-[white]"
+              onClick={(e) => dispatch(setlanguage(e.target.value))}
+              className={`cursor-pointer text-[${language === "ENG" && "red"}]`}
             >
               ENG
             </button>
             /
             <button
               value="AZE"
-              onClick={(e) => dispatch(setLang(e.target.value))}
-              className="text-[white]"
+              onClick={(e) => dispatch(setlanguage(e.target.value))}
+              className={`cursor-pointer text-[${language === "AZE" && "red"}]`}
             >
               AZE
             </button>

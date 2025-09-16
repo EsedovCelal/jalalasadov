@@ -13,7 +13,7 @@ const Home = () => {
   });
   return (
     <Element name="Home">
-      <Box className="flex justify-center mt-20">
+      <Box className="flex justify-center mt-20 text-[#EEEEEE] ">
         <Box className="my-[50px] flex flex-row items-center justify-between relative z-[1] max-w-[1300px]">
           <Box className="section_one_texts_box ">
             <motion.div
@@ -21,7 +21,7 @@ const Home = () => {
               ref={ref}
               initial="hidden" // start at "hidden"
               animate={inView ? "visible" : "hidden"}
-              className="text-3xl font-bold text-[#EEEEEE] text-[1.5rem]"
+              className="text-3xl font-bold text-[1.5rem]"
               marginBottom={3}
             >
               SOFTWARE ENGINEER | FRONT-END WEB DEVELOPER
@@ -31,7 +31,7 @@ const Home = () => {
               initial="hidden" // start at "hidden"
               animate={inView ? "visible" : "hidden"}
               variants={fadeInLeft} // assign the variants
-              className="font-[700] text-[#EEEEEE] text-[3.75rem]"
+              className="font-[700] text-[3.75rem]"
             >
               JALAL
               <br />
@@ -42,7 +42,7 @@ const Home = () => {
               variants={fadeInUp} // assign the variants
               initial="hidden" // start at "hidden"
               animate={inView ? "visible" : "hidden"}
-              className="text-[#EEEEEE] text-[1.5rem] text-base leading-normal"
+              className="text-[1.5rem] text-base leading-normal"
             >
               Merit graduate of TUM (22nd worldwide) with publications in ACM
               and Springer JITT. Creator of the internationally recognized Green
