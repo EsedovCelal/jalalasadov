@@ -5,8 +5,12 @@ import "./BlogPage.css";
 import { fadeInUp, fadeInDown, fadeInRight, fadeInLeft } from "../tools/motion";
 import { Element } from "react-scroll";
 import { useInView } from "react-intersection-observer";
+import translations from "../translations";
+import { useSelector } from "react-redux";
 
 const Home = () => {
+  const language = useSelector((state) => state.language.defaultlanguage);
+  console.log(translations[language]["home"]["text1"]);
   const { ref, inView } = useInView({
     triggerOnce: false,
     threshold: 0.3, // 30% animation will start
@@ -21,10 +25,10 @@ const Home = () => {
               ref={ref}
               initial="hidden" // start at "hidden"
               animate={inView ? "visible" : "hidden"}
-              className="text-3xl font-bold text-[1.5rem]"
+              className="text-3xl font-bold text-[1.5rem] uppercase"
               marginBottom={3}
             >
-              SOFTWARE ENGINEER | FRONT-END WEB DEVELOPER
+              {translations[language]["home"]["text1"]}
             </motion.div>
             <motion.div
               ref={ref}
@@ -33,9 +37,9 @@ const Home = () => {
               variants={fadeInLeft} // assign the variants
               className="font-[700] text-[3.75rem]"
             >
-              JALAL
+              {translations[language]["home"]["Jalal"]}
               <br />
-              ASADOV
+              {translations[language]["home"]["Asadov"]}
             </motion.div>
             <motion.div
               ref={ref}
@@ -44,11 +48,7 @@ const Home = () => {
               animate={inView ? "visible" : "hidden"}
               className="text-[1.5rem] text-base leading-normal"
             >
-              Merit graduate of TUM (22nd worldwide) with publications in ACM
-              and Springer JITT. Creator of the internationally recognized Green
-              Destination Recommender. Over 3 years of software engineering
-              experience in Germany, delivering scalable, reliable full-stack
-              solutions to real-world problems.
+              {translations[language]["home"]["text2"]}
             </motion.div>
           </Box>
           <motion.div

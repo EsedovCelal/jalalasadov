@@ -3,7 +3,30 @@ import { motion } from "motion/react";
 import computer from "../assets/img/computer.jpg";
 import { fadeInDown, fadeInUp } from "../tools/motion";
 import { useInView } from "react-intersection-observer";
+import { FaHtml5, FaCss3Alt, FaReact, FaJs } from "react-icons/fa";
 const Skills = () => {
+  const icons = [
+    {
+      name: "HTML",
+      icon: <FaHtml5 />,
+      style: "hover:text-orange-500 hover:scale-125 hover:-translate-y-2",
+    },
+    {
+      name: "CSS",
+      icon: <FaCss3Alt />,
+      style: "hover:text-blue-500 hover:rotate-12 hover:scale-110",
+    },
+    {
+      name: "JavaScript",
+      icon: <FaJs />,
+      style: "hover:text-yellow-400 hover:-rotate-12 hover:scale-110",
+    },
+    {
+      name: "React",
+      icon: <FaReact />,
+      style: "hover:text-cyan-400 hover:animate-spin",
+    },
+  ];
   const { ref, inView } = useInView({
     triggerOnce: false,
     threshold: 0.3, // 30% animation will start
@@ -93,6 +116,27 @@ const Skills = () => {
             </div>
           </motion.div>
         </div>
+      </div>
+      <div className="flex flex-row justify-center items-center mt-10 gap-10">
+        {icons.map((item, i) => (
+          <motion.div
+            ref={ref}
+            variants={fadeInDown}
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            key={i}
+            className="flex flex-col items-center gap-2"
+          >
+            <div
+              className={`text-7xl text-white cursor-pointer transition-all duration-500 ${item.style}`}
+            >
+              {item.icon}
+            </div>
+            <span className="text-lg font-semibold text-white">
+              {item.name}
+            </span>
+          </motion.div>
+        ))}
       </div>
       <div className="w-full h-[90px]">
         <div className="w-full border-2 border-gray-300"></div>

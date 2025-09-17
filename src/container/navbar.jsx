@@ -5,11 +5,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { setlanguage } from "../store/langSlice";
 import ScrollLinks from "./ScrollLinks";
 import { useState } from "react";
+import translations from "../translations";
 
 const Navbar = () => {
   const dispatch = useDispatch();
   const language = useSelector((state) => state.language.defaultlanguage);
-  console.log(language);
   const [isOpen, setOpen] = useState(false);
   const styles = {
     links_when_hamburger_is_open:
@@ -61,7 +61,7 @@ const Navbar = () => {
               </svg>
             </span>
             <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
-              Hire Me
+              {translations[language]["navbar"]["Hire_me"]}
             </span>
           </a>
           <div className=" min-[1280px]:hidden">
@@ -72,23 +72,29 @@ const Navbar = () => {
               color="#EEEEEE"
             />
           </div>
-          <div className="text-[white]">
+          <div className="flex gap-2 ml-5">
             <button
               value="az"
               onClick={(e) => dispatch(setlanguage(e.target.value))}
-              className={`cursor-pointer ${
-                language === "AZ" ? `text-[red]` : `text-[white]`
-              }`}
+              className={`relative inline-flex items-center justify-center px-6 py-2 font-semibold rounded transition-all duration-200 
+      ${
+        language === "az"
+          ? "bg-indigo-600 text-white"
+          : "bg-gray-100 text-indigo-600 hover:bg-indigo-600 hover:text-white"
+      }`}
             >
               AZ
             </button>
-            /
+
             <button
               value="en"
               onClick={(e) => dispatch(setlanguage(e.target.value))}
-              className={`cursor-pointer ${
-                language === "EN" ? `text-[red]` : `text-[white]`
-              }`}
+              className={`relative inline-flex items-center justify-center px-6 py-2 font-semibold rounded transition-all duration-200 
+      ${
+        language === "en"
+          ? "bg-indigo-600 text-white"
+          : "bg-gray-100 text-indigo-600 hover:bg-indigo-600 hover:text-white"
+      }`}
             >
               EN
             </button>
