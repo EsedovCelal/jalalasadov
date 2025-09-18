@@ -51,8 +51,9 @@ const Skills = () => {
               and blockchain technologies, enabling robust, scalable, and
               maintainable solutions across diverse domains
             </p>
+            <div className="w-full border-2 border-gray-300"></div>
           </motion.div>
-          <div className="w-full border-2 border-gray-300"></div>
+
           <motion.div
             ref={ref}
             variants={fadeInDown}
@@ -117,7 +118,7 @@ const Skills = () => {
           </motion.div>
         </div>
       </div>
-      <div className="flex flex-row justify-center items-center mt-10 gap-10">
+      <div className="flex flex-row justify-center items-center mt-10 gap-10 mb-5">
         {icons.map((item, i) => (
           <motion.div
             ref={ref}

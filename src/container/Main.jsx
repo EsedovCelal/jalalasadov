@@ -1,5 +1,5 @@
 import Navbar from "./navbar";
-import "./BlogPage.css";
+import "./Main.css";
 import Home from "./Home";
 import Line_Text from "./Text_Line";
 import About_me from "./About_me";
@@ -7,11 +7,10 @@ import Skills from "./Skills";
 import Experience from "./Experience";
 import Footer from "./Footer";
 
-const BlogPage = () => {
+const Main = () => {
   return (
     <div
-      className="min-h-screen flex items-center
-         bg-[#010e28]
+      className="bg-[#010e28]
          bg-[length:30px_30px]
          bg-[linear-gradient(to_bottom,#082740_1px,transparent_1px),linear-gradient(to_right,#082740_1px,transparent_1px)]
          bg-repeat
@@ -31,4 +30,4 @@ const BlogPage = () => {
     </div>
   );
 };
-export default BlogPage;
+export default Main;

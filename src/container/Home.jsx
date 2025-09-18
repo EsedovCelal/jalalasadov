@@ -1,7 +1,7 @@
 import jalalasadov from "../assets/img/jalalasadov.jpg";
 import { Box } from "@mui/material";
 import { motion } from "motion/react";
-import "./BlogPage.css";
+import "./Main.css";
 import { fadeInUp, fadeInDown, fadeInRight, fadeInLeft } from "../tools/motion";
 import { Element } from "react-scroll";
 import { useInView } from "react-intersection-observer";
@@ -10,14 +10,13 @@ import { useSelector } from "react-redux";
 
 const Home = () => {
   const language = useSelector((state) => state.language.defaultlanguage);
-  console.log(translations[language]["home"]["text1"]);
   const { ref, inView } = useInView({
     triggerOnce: false,
     threshold: 0.3, // 30% animation will start
   });
   return (
     <Element name="Home">
-      <Box className="flex justify-center mt-20 text-[#EEEEEE] ">
+      <Box className="flex justify-center pt-20 text-[#EEEEEE] ">
         <Box className="my-[50px] flex flex-row items-center justify-between relative z-[1] max-w-[1300px]">
           <Box className="section_one_texts_box ">
             <motion.div

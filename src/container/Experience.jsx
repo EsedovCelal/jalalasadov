@@ -1,8 +1,8 @@
 const Experience = () => {
   return (
-    <div className="text-[white] h-[600px]">
-      <div>
-        <h1>Experience</h1>
+    <div className="text-white max-w-[1200px] min-h-screen flex flex-col items-center justify-center mx-auto">
+      <div className="text-center min-h-[100px]">
+        <h1 className="text-[50px]">Experience</h1>
         <span>
           Over three years of hands-on experience delivering scalable software
           solutions across startups, academia, and enterprise environments.
@@ -20,6 +20,7 @@ const Experience = () => {
         <div></div>
       </div>
       <div className="w-full border-2 border-gray-300"></div>
+      <div></div>
     </div>
   );
 };

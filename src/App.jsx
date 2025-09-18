@@ -1,8 +1,8 @@
 import "./App.css";
-import BlogPage from "./container/BlogPage";
+import Main from "./container/Main";
 
 function App() {
-  return <BlogPage />;
+  return <Main />;
 }
 
 export default App;
