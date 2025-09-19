@@ -33,7 +33,7 @@ const Skills = () => {
   });
   return (
     <Element name="Skills">
-      <div className="flex justify-center max-h-[600px] text-[white] ">
+      <div className="flex justify-center max-h-[600px] text-[white]">
         <div className="max-w-[1100px] mx-auto w-full">
           <motion.div
             ref={ref}
@@ -51,15 +51,14 @@ const Skills = () => {
               and blockchain technologies, enabling robust, scalable, and
               maintainable solutions across diverse domains
             </p>
-            <div className="w-full border-2 border-gray-300"></div>
           </motion.div>
-
+          <div className="w-full border-2 border-gray-300"></div>
           <motion.div
             ref={ref}
             variants={fadeInDown}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
-            className="flex flex-row max-h-[600px]"
+            className="flex flex-row max-h-[600px] mt-10"
           >
             <div className="flex flex-col justify-between my-[20px]">
               <div>
@@ -118,7 +117,7 @@ const Skills = () => {
           </motion.div>
         </div>
       </div>
-      <div className="flex flex-row justify-center items-center mt-10 gap-10 mb-5">
+      <div className="flex flex-row justify-center items-center mt-10 gap-10">
         {icons.map((item, i) => (
           <motion.div
             ref={ref}

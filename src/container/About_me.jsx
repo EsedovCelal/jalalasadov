@@ -9,7 +9,7 @@ const About_me = () => {
     threshold: 0.3, // 30% animation will start
   });
   return (
-    <Element name="About me" className="flex justify-center my-[40px]">
+    <Element name="About me" className="flex justify-center my-[40px] px-8">
       <div className="flex justify-between max-w-[1300px] mx-auto w-full h-[500px]">
         <motion.div
           ref={ref}
@@ -42,7 +42,7 @@ const About_me = () => {
             challenges where I can apply my adaptability and drive to create
             lasting technological impact.
           </h1>
-          <button className="h-[40px] w-[150px] cursor-pointer text-[#EEEEEE] outline-[#EEEEEE] bg-[#2980B9] outline-1 rounded-[5px]">
+          <button className="h-[40px] w-[150px] cursor-pointer text-[#EEEEEE] outline-[#EEEEEE] bg-[#3E5F44] outline-1 rounded-[5px]">
             my projects
           </button>
         </motion.div>

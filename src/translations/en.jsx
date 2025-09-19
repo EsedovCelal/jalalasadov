@@ -13,7 +13,7 @@ export default {
     Jalal: "Jalal",
     Asadov: "Asadov",
     text2:
-      "Merit graduate of TUM (22nd worldwide) with publications in ACM and Springer JITT. Creator of the internationally recognized Green Destination Recommender. Over 3 years of software engineering experience in Germany, delivering scalable, reliable full-stack solutions to real-world problems.",
+      "Graduate of Azerbaijan Technical University, Faculty of Electronics, Telecommunications, and Radio Engineering. Holder of IT Academy Certificate in Frontend Development (256 hours, HTML, CSS, JavaScript, React). Solid understanding of web interface development and modern technologies.",
   },
   navbar: {
     Hire_me: "Hire me",

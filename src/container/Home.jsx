@@ -1,7 +1,6 @@
 import jalalasadov from "../assets/img/jalalasadov.jpg";
 import { Box } from "@mui/material";
 import { motion } from "motion/react";
-import "./Main.css";
 import { fadeInUp, fadeInDown, fadeInRight, fadeInLeft } from "../tools/motion";
 import { Element } from "react-scroll";
 import { useInView } from "react-intersection-observer";
@@ -15,7 +14,7 @@ const Home = () => {
     threshold: 0.3, // 30% animation will start
   });
   return (
-    <Element name="Home">
+    <Element name="Home" className="px-8">
       <Box className="flex justify-center pt-20 text-[#EEEEEE] ">
         <Box className="my-[50px] flex flex-row items-center justify-between relative z-[1] max-w-[1300px]">
           <Box className="section_one_texts_box ">

@@ -12,7 +12,7 @@ const Footer = () => {
             <div>
               <ScrollLinks className="flex" />
               <br />
-              <span className="text-[white] capitalize ml-[500px]">
+              <span className="text-[white] capitalize">
                 © 2025 jalal asadov | all rights reserved.
               </span>
             </div>

@@ -1,11 +1,11 @@
 import Navbar from "./navbar";
-import "./Main.css";
 import Home from "./Home";
 import Line_Text from "./Text_Line";
 import About_me from "./About_me";
 import Skills from "./Skills";
 import Experience from "./Experience";
 import Footer from "./Footer";
+import Education from "./Education";
 
 const Main = () => {
   return (
@@ -24,6 +24,7 @@ const Main = () => {
           <About_me />
           <Skills />
           <Experience />
+          <Education />
           <Footer />
         </div>
       </div>
