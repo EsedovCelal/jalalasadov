@@ -13,11 +13,15 @@ const Home = () => {
     triggerOnce: false,
     threshold: 0.3, // 30% animation will start
   });
+  const styles = {
+    section_one_img_box:
+      "relative z-20 overflow-clip rounded-[10px] p-[5px] after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:rotate-45 after:h-[600px] after:w-[200px] after:bg-[#eeeeee] after:shadow-[0_0_10px_white,0_0_40px_white,0_0_80px_white] after:animate-[animate_10s_linear_infinite]",
+  };
   return (
     <Element name="Home" className="px-8">
-      <Box className="flex justify-center pt-20 text-[#EEEEEE] ">
-        <Box className="my-[50px] flex flex-row items-center justify-between relative z-[1] max-w-[1300px]">
-          <Box className="section_one_texts_box ">
+      <Box className="flex justify-center pt-20 text-[#EEEEEE]">
+        <Box className="text-center md:text-left my-[50px] flex flex-col md:flex-row lg:flex-row items-center justify-between max-w-[1300px]">
+          <Box>
             <motion.div
               variants={fadeInDown} // assign the variants
               ref={ref}
@@ -33,18 +37,19 @@ const Home = () => {
               initial="hidden" // start at "hidden"
               animate={inView ? "visible" : "hidden"}
               variants={fadeInLeft} // assign the variants
-              className="font-[700] text-[3.75rem]"
+              className="uppercase font-[700] lg:text-6xl  text-5xl font-bold py-8"
             >
-              {translations[language]["home"]["Jalal"]}
-              <br />
-              {translations[language]["home"]["Asadov"]}
+              <span className="md:block inline">
+                {translations[language]["home"]["Jalal"]}
+              </span>
+              <span> {translations[language]["home"]["Asadov"]}</span>
             </motion.div>
             <motion.div
               ref={ref}
               variants={fadeInUp} // assign the variants
               initial="hidden" // start at "hidden"
               animate={inView ? "visible" : "hidden"}
-              className="text-[1.5rem] text-base leading-normal"
+              className="text-[1.2rem] text-base leading-normal mb-[15px]"
             >
               {translations[language]["home"]["text2"]}
             </motion.div>
@@ -54,7 +59,7 @@ const Home = () => {
             variants={fadeInRight} // assign the variants
             initial="hidden" // start at "hidden"
             animate={inView ? "visible" : "hidden"}
-            className="section_one_img_box "
+            className={styles.section_one_img_box}
           >
             <img
               src={jalalasadov}

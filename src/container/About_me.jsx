@@ -10,13 +10,13 @@ const About_me = () => {
   });
   return (
     <Element name="About me" className="flex justify-center my-[40px] px-8">
-      <div className="flex justify-between max-w-[1300px] mx-auto w-full h-[500px]">
+      <div className="md:flex mx-auto w-full justify-between max-w-[1300px] lg:h-[500px]">
         <motion.div
           ref={ref}
           variants={fadeInLeft}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          className="flex flex-col place-content-around mr-[40px] w-[60%]"
+          className="flex flex-col place-content-around mr-[40px] md:w-[60%] text-center md:text-left"
         >
           <span className="text-[3.25rem] text-[#EEEEEE] capitalize">
             about me
@@ -51,7 +51,7 @@ const About_me = () => {
           variants={fadeInRight}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          className="flex flex-col place-content-around"
+          className="flex flex-col place-content-around "
         >
           <img src={jalalasadov} className="img_about_me" />
         </motion.div>
