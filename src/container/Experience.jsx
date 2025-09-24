@@ -11,7 +11,7 @@ const Experience = () => {
   return (
     <Element
       name="Experience"
-      className="text-white max-w-[1200px] flex flex-col items-center justify-center mx-auto w-full"
+      className="text-white flex flex-col items-center justify-center"
     >
       <motion.div
         variants={fadeInDown} // assign the variants

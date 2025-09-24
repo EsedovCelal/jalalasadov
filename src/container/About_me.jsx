@@ -13,7 +13,7 @@ const About_me = () => {
       name="About me"
       className="flex justify-center my-[40px] px-8 text-[#EEEEEE]"
     >
-      <div className="md:flex mx-auto w-full justify-between max-w-[1300px] md:h-[500px] mb-[30px] lg:mb-[0]">
+      <div className="md:flex justify-between md:h-[500px] mb-[30px] lg:mb-[0]">
         <motion.div
           ref={ref}
           variants={fadeInLeft}

@@ -14,7 +14,7 @@ const ScrollLinks = () => {
         smooth={true}
         duration={900}
         className={styles.link}
-        offset={-90}
+        offset={-120}
       >
         {translations[language]["scroll_links"]["About_me"]}
       </Link>
@@ -23,7 +23,7 @@ const ScrollLinks = () => {
         smooth={true}
         duration={900}
         className={styles.link}
-        offset={-90}
+        offset={-120}
       >
         {translations[language]["scroll_links"]["Skills"]}
       </Link>
@@ -41,7 +41,7 @@ const ScrollLinks = () => {
         smooth={true}
         duration={900}
         className={styles.link}
-        offset={-90}
+        offset={-120}
       >
         {translations[language]["scroll_links"]["Education"]}
       </Link>
@@ -50,7 +50,7 @@ const ScrollLinks = () => {
         smooth={true}
         duration={900}
         className={styles.link}
-        offset={-90}
+        offset={-120}
       >
         {translations[language]["scroll_links"]["Projects"]}
       </Link>
@@ -59,7 +59,7 @@ const ScrollLinks = () => {
         smooth={true}
         duration={900}
         className={styles.link}
-        offset={-90}
+        offset={-120}
       >
         {translations[language]["scroll_links"]["Publications"]}
       </Link>
@@ -68,7 +68,7 @@ const ScrollLinks = () => {
         smooth={true}
         duration={900}
         className={styles.link}
-        offset={-90}
+        offset={-120}
       >
         {translations[language]["scroll_links"]["Recommendations"]}
       </Link>

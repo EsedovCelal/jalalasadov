@@ -35,7 +35,7 @@ const Skills = () => {
     <Element name="Skills">
       <div className="mx-[20px]">
         <div className="flex justify-center max-h-[600px] text-[white]">
-          <div className="max-w-[1100px] mx-auto w-full">
+          <div>
             <motion.div
               ref={ref}
               variants={fadeInUp}
@@ -141,12 +141,12 @@ const Skills = () => {
             </motion.div>
           ))}
         </div>
-        <div className="w-full h-[90px]">
+        <div className="h-[90px] relative left-1/2 right-1/2 w-screen -ml-[50vw] -mr-[50vw]">
           <div className="w-full border-2 border-gray-300 hidden lg:block"></div>
           <img
             src={computer}
             alt="Banner"
-            className="w-full h-full object-cover hidden lg:block"
+            className="h-full object-cover hidden lg:block relative left-1/2 right-1/2 w-screen -ml-[50vw] -mr-[50vw]"
           />
           <div className="w-full border-2 border-gray-300 hidden lg:block"></div>
         </div>

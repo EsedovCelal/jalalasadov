@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
+import translations from "../translations";
+import { useSelector } from "react-redux";
 const Line_Text = () => {
+  const language = useSelector((state) => state.language.defaultlanguage);
   const all_ability = [
-    "FAST LEANER",
-    "RESULT-DRIVEN",
-    "GROWTH-MINDED",
-    "ANALYTICAL THINKER",
+    translations[language]["text_line"]["fast_leaner"],
+    translations[language]["text_line"]["result_driven"],
+    translations[language]["text_line"]["growth_minded"],
+    translations[language]["text_line"]["analytical_thinker"],
   ];
   const [index, setIndex] = useState(0);
   useEffect(() => {
@@ -13,13 +16,14 @@ const Line_Text = () => {
     }, 3000);
     return () => clearInterval(interval);
   }, [all_ability.length]);
-  console.log(index);
   return (
-    <div className="flex justify-center bg-[#3E5F44]">
+    <div className="flex justify-center bg-[#3E5F44] relative left-1/2 right-1/2 w-screen -ml-[50vw] -mr-[50vw]">
       <div className="flex flex-col md:flex-row gap-4 lg:text-4xl text-2xl items-center text-[#EEEEEE]">
-        <p className="p-10 text-4xl block md:hidden">{all_ability[index]}</p>
+        <p className="p-10 text-4xl block md:hidden uppercase">
+          {all_ability[index]}
+        </p>
         {all_ability.map((ability, i) => (
-          <p key={i} className="hidden md:block p-10 ">
+          <p key={i} className="hidden md:block p-10 uppercase">
             {ability}
           </p>
         ))}

@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <Element name="Home" className="px-8">
       <Box className="pt-20 text-[#EEEEEE]">
-        <Box className="text-center md:text-left my-[50px] flex flex-col md:flex-row lg:flex-row items-center justify-between max-w-[1300px]">
+        <Box className="text-center md:text-left my-[50px] flex flex-col md:flex-row lg:flex-row items-center justify-between">
           <Box>
             <motion.div
               variants={fadeInDown} // assign the variants

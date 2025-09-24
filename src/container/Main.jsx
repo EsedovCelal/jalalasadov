@@ -16,7 +16,7 @@ const Main = () => {
          bg-repeat
          animate-bgmove"
     >
-      <div className="flex justify-center">
+      <div className="max-w-[1300px] mx-auto">
         <Navbar />
         <div>
           <Home />

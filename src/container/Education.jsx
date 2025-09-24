@@ -8,10 +8,7 @@ const Education = () => {
     threshold: 0.3, // 30% animation will start
   });
   return (
-    <Element
-      name="Education"
-      className="text-[white] mx-auto max-w-[1200px] mb-[100px]"
-    >
+    <Element name="Education" className="text-[white] mb-[100px]">
       <motion.div
         variants={fadeInDown} // assign the variants
         ref={ref}
