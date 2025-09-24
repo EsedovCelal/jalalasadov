@@ -16,7 +16,7 @@ const Main = () => {
          bg-repeat
          animate-bgmove"
     >
-      <div>
+      <div className="flex justify-center">
         <Navbar />
         <div>
           <Home />

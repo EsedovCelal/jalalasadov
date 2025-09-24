@@ -9,19 +9,20 @@ const About_me = () => {
     threshold: 0.3, // 30% animation will start
   });
   return (
-    <Element name="About me" className="flex justify-center my-[40px] px-8">
-      <div className="md:flex mx-auto w-full justify-between max-w-[1300px] lg:h-[500px]">
+    <Element
+      name="About me"
+      className="flex justify-center my-[40px] px-8 text-[#EEEEEE]"
+    >
+      <div className="md:flex mx-auto w-full justify-between max-w-[1300px] md:h-[500px] mb-[30px] lg:mb-[0]">
         <motion.div
           ref={ref}
           variants={fadeInLeft}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          className="flex flex-col place-content-around mr-[40px] md:w-[60%] text-center md:text-left"
+          className="md:flex md:flex-col place-content-around mr-[40px] md:w-[60%] text-center md:text-left"
         >
-          <span className="text-[3.25rem] text-[#EEEEEE] capitalize">
-            about me
-          </span>
-          <h1 className="text-[#EEEEEE]">
+          <span className="text-[3.25rem] capitalize">about me</span>
+          <span className="md:inline block">
             I'm Jalal Asadov, a Software Engineer passionate about creating
             scalable, data-driven applications that solve real-world problems.
             With over 3 years of professional experience and a Master’s degree
@@ -31,8 +32,8 @@ const About_me = () => {
             projects—even those involving unfamiliar technologies—by rapidly
             mastering new stacks and delivering high-quality solutions that meet
             or exceed expectations.
-          </h1>
-          <h1 className="text-[#EEEEEE]">
+          </span>
+          <span className="md:inline block mb-[30px]">
             My technical toolkit includes Java, React, Node.js, AWS, and
             cloud-native technologies, enabling me to build efficient,
             user-focused systems across diverse domains. From automating complex
@@ -41,8 +42,8 @@ const About_me = () => {
             continuous learning. I’m always eager to embrace meaningful
             challenges where I can apply my adaptability and drive to create
             lasting technological impact.
-          </h1>
-          <button className="h-[40px] w-[150px] cursor-pointer text-[#EEEEEE] outline-[#EEEEEE] bg-[#3E5F44] outline-1 rounded-[5px]">
+          </span>
+          <button className=" mb-[30px] h-[40px] w-[150px] cursor-pointer text-[#EEEEEE] outline-[#EEEEEE] bg-[#3E5F44] outline-1 rounded-[5px]">
             my projects
           </button>
         </motion.div>
@@ -51,7 +52,7 @@ const About_me = () => {
           variants={fadeInRight}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          className="flex flex-col place-content-around "
+          className="flex md:flex-col place-content-around "
         >
           <img src={jalalasadov} className="img_about_me" />
         </motion.div>

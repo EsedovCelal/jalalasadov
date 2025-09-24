@@ -11,7 +11,7 @@ const Experience = () => {
   return (
     <Element
       name="Experience"
-      className="text-white max-w-[1200px] flex flex-col items-center justify-center mx-auto"
+      className="text-white max-w-[1200px] flex flex-col items-center justify-center mx-auto w-full"
     >
       <motion.div
         variants={fadeInDown} // assign the variants
@@ -31,8 +31,8 @@ const Experience = () => {
           business performance.
         </span>
       </motion.div>
-      <div className="w-full border-2 border-gray-300"></div>
-      <div className="flex gap-4 mt-[30px] mb-[30px] h-[350px]">
+      <div className="w-full border-2 border-gray-300 hidden md:block"></div>
+      <div className="flex gap-4 mt-[30px] mb-[30px]">
         <motion.div
           variants={fadeInLeft} // assign the variants
           ref={ref}
@@ -90,7 +90,7 @@ const Experience = () => {
           </p>
         </motion.div>
       </div>
-      <div className="w-full border-2 border-gray-300"></div>
+      <div className="w-full border-2 border-gray-300 hidden md:block"></div>
       <div></div>
     </Element>
   );
