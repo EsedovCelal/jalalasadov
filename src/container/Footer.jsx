@@ -1,7 +1,7 @@
 import ScrollLinks from "./ScrollLinks";
 const Footer = () => {
   return (
-    <div className="min-h-[130px] text-[#EEEEEE]">
+    <div className="min-h-[130px] text-[#EEEEEE] px-8">
       <div className="border-1 border-gray-300 mx-[30px] relative left-1/2 right-1/2 w-screen -ml-[50vw] -mr-[50vw]" />
       <div>
         <div className="flex justify-between mt-[10px]">
