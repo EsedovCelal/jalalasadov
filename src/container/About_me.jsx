@@ -3,10 +3,13 @@ import jalalasadov from "../assets/img/jalalasadov.jpg";
 import { fadeInLeft, fadeInRight } from "../tools/motion";
 import { Element } from "react-scroll";
 import { useInView } from "react-intersection-observer";
+import translations from "../translations";
+import { useSelector } from "react-redux";
 const About_me = () => {
+  const language = useSelector((state) => state.language.defaultlanguage);
   const { ref, inView } = useInView({
     triggerOnce: false,
-    threshold: 0.3, // 30% animation will start
+    threshold: 0.03, // 3% animation will start
   });
   return (
     <Element
@@ -19,32 +22,19 @@ const About_me = () => {
           variants={fadeInLeft}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          className="md:flex md:flex-col place-content-around mr-[40px] md:w-[60%] text-center md:text-left"
+          className="md:flex md:flex-col place-content-around mr-[40px] md:w-[60%] text-center md:text-left "
         >
-          <span className="text-[3.25rem] capitalize">about me</span>
+          <span className="text-[3.25rem] capitalize">
+            {translations[language]["about_me"]["about_me"]}
+          </span>
           <span className="md:inline block">
-            I'm Jalal Asadov, a Software Engineer passionate about creating
-            scalable, data-driven applications that solve real-world problems.
-            With over 3 years of professional experience and a Master’s degree
-            in Computer Science from the Technical University of Munich (TUM), I
-            combine strong academic foundations with practical expertise. I
-            thrive in fast-paced environments and confidently take on
-            projects—even those involving unfamiliar technologies—by rapidly
-            mastering new stacks and delivering high-quality solutions that meet
-            or exceed expectations.
+            {translations[language]["about_me"]["text1"]}
           </span>
           <span className="md:inline block mb-[30px]">
-            My technical toolkit includes Java, React, Node.js, AWS, and
-            cloud-native technologies, enabling me to build efficient,
-            user-focused systems across diverse domains. From automating complex
-            workflows to developing educational platforms impacting hundreds of
-            students, I am committed to clean code, collaboration, and
-            continuous learning. I’m always eager to embrace meaningful
-            challenges where I can apply my adaptability and drive to create
-            lasting technological impact.
+            {translations[language]["about_me"]["text2"]}
           </span>
           <button className=" mb-[30px] h-[40px] w-[150px] cursor-pointer text-[#EEEEEE] outline-[#EEEEEE] bg-[#3E5F44] outline-1 rounded-[5px]">
-            my projects
+            {translations[language]["about_me"]["my_projects"]}
           </button>
         </motion.div>
         <motion.div

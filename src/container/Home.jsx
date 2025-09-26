@@ -11,7 +11,7 @@ const Home = () => {
   const language = useSelector((state) => state.language.defaultlanguage);
   const { ref, inView } = useInView({
     triggerOnce: false,
-    threshold: 0.3, // 30% animation will start
+    threshold: 0.03, // 30% animation will start
   });
   const styles = {
     section_one_img_box:

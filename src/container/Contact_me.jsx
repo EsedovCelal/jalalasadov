@@ -6,10 +6,11 @@ import { CiPhone } from "react-icons/ci";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { Element } from "react-scroll";
 
 const Contact_me = () => {
   return (
-    <div className="text-[#EEEEEE] mb-[60px] px-8">
+    <Element name="Contact me" className="text-[#EEEEEE] mb-[60px] px-8">
       <div className="text-center">
         <span className="text-6xl  text-center">Contact me</span>
       </div>
@@ -27,11 +28,11 @@ const Contact_me = () => {
           />
           <input
             placeholder="You Email"
-            className="bg-white h-12 rounded-xl placeholder:text-[lightgray] pl-2"
+            className="bg-white h-12 rounded-xl placeholder:text-[lightgray] pl-2 text-black"
           />
           <textarea
             placeholder="Message"
-            className="bg-white rounded-xl placeholder:text-[lightgray] pl-2 h-[250px] pt-2"
+            className="bg-white rounded-xl placeholder:text-[lightgray] pl-2 h-[250px] pt-2 text-black"
           />
           <button className="bg-[#F4B459] h-10 rounded-xl font-bold text-[black]">
             Send
@@ -73,7 +74,7 @@ const Contact_me = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Element>
   );
 };
 export default Contact_me;

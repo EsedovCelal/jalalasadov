@@ -32,7 +32,7 @@ const ScrollLinks = () => {
         smooth={true}
         duration={900}
         className={styles.link}
-        offset={-90}
+        offset={-120}
       >
         {translations[language]["scroll_links"]["Experience"]}
       </Link>

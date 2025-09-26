@@ -4,7 +4,10 @@ import computer from "../assets/img/computer.jpg";
 import { fadeInDown, fadeInUp } from "../tools/motion";
 import { useInView } from "react-intersection-observer";
 import { FaHtml5, FaCss3Alt, FaReact, FaJs } from "react-icons/fa";
+import translations from "../translations";
+import { useSelector } from "react-redux";
 const Skills = () => {
+  const language = useSelector((state) => state.language.defaultlanguage);
   const icons = [
     {
       name: "HTML",
@@ -29,7 +32,7 @@ const Skills = () => {
   ];
   const { ref, inView } = useInView({
     triggerOnce: false,
-    threshold: 0.3, // 30% animation will start
+    threshold: 0.03, // 30% animation will start
   });
   return (
     <Element name="Skills">
@@ -43,7 +46,9 @@ const Skills = () => {
               animate={inView ? "visible" : "hidden"}
               className="mb-[50px]"
             >
-              <h1 className="text-center text-[50px]">Skills</h1>
+              <h1 className="text-center text-[50px]">
+                {translations[language]["skills"]["skills"]}
+              </h1>
               <p>
                 Comprehensive skill set spanning full-stack development, cloud
                 infrastructure, distributed systems, and modern software design.

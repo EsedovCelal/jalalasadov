@@ -8,7 +8,7 @@ import Footer from "./Footer";
 import Education from "./Education";
 import Contact_me from "./Contact_me";
 
-const Main = () => {
+const Main_blog = () => {
   return (
     <div
       className="bg-[#010e28]
@@ -17,7 +17,7 @@ const Main = () => {
          bg-repeat
          animate-bgmove"
     >
-      <div className="max-w-[1300px] mx-auto">
+      <div className="max-w-[1300px] mx-auto w-full">
         <Navbar />
         <div>
           <Home />
@@ -33,4 +33,4 @@ const Main = () => {
     </div>
   );
 };
-export default Main;
+export default Main_blog;

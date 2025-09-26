@@ -24,5 +24,15 @@ export default {
   navbar: {
     Hire_me: "Hire me",
   },
-  about_me: {},
+  about_me: {
+    about_me: "About me",
+    text1:
+      "I am Cəlal Əsədov. In my professional IT career, I first worked as an IT Helpdesk Engineer at the Aghjabadi ASAN Service Center. Currently, I am working in the same position at the Baku ASAN Service Center No. 2. My responsibility is to ensure the proper functioning of all technical equipment within the center. Alongside my main duties, I also try to engage in programming.",
+    text2:
+      "I successfully completed the IT Academy Frontend Developer Certificate Program (256 hours), gaining strong expertise in HTML, CSS, JavaScript, and React. Throughout the program, I applied my knowledge by developing multiple projects, including M1-Project, M2-Project, M3-Project, M4-Project, and M5-Project. This hands-on experience sharpened my ability to design responsive user interfaces, implement dynamic functionality, and write clean, maintainable code. I am eager to build on this foundation, continuously improve my skills, and contribute to impactful web development projects.",
+    my_projects: "my projects",
+  },
+  skills: {
+    skills: "Skills",
+  },
 };

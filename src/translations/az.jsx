@@ -24,5 +24,15 @@ export default {
   navbar: {
     Hire_me: "İşə al",
   },
-  about_me: {},
+  about_me: {
+    about_me: "Haqqımda",
+    text1:
+      "Mən Əsədov Cəlal, Peşəkar IT fəaliyyətimdə ilk dəfə Ağcabədi ASAN Xidmət mərkəzində IT Helpdesk Mühəndis vəzifəsində çalışmışam. Hazırda Bakı şəhəri 2 saylı ASAN Xidmət mərkəzində eyniadlı vəzifədə işləyirəm. Vəzifəm mərkəz daxilində olan bütün texniki avadanlıqlardan  məhsul olmaqdır. Öz işimlər yanaşı proqramlarşdırma ilədə məşğul olmağa çalışıram.",
+    text2:
+      "Mən IT Academy Frontend Developer Sertifikat Proqramını (256 saat) uğurla tamamlamışam və HTML, CSS, JavaScript və React sahəsində güclü biliklər qazanmışam. Tədris müddətində biliklərimi tətbiq edərək M1-Project, M2-Project, M3-Project, M4-Project və M5-Project layihələrini hazırlamışam. Bu praktiki təcrübə mənim responsiv interfeyslər dizayn etmək, dinamik funksionallıq tətbiq etmək və təmiz, asan idarə olunan kod yazmaq bacarıqlarımı inkişaf etdirmişdir. Gələcəkdə bu bazanı daha da gücləndirərək davamlı öyrənməyə və təsirli veb layihələrə töhfə verməyə həvəsliyəm.",
+    my_projects: "layihələrim",
+  },
+  skills: {
+    skills: "Bacarıqlar",
+  },
 };

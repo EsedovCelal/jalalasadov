@@ -5,10 +5,10 @@ import { useInView } from "react-intersection-observer";
 const Education = () => {
   const { ref, inView } = useInView({
     triggerOnce: false,
-    threshold: 0.3, // 30% animation will start
+    threshold: 0.03, // 30% animation will start
   });
   return (
-    <Element name="Education" className="text-[white] mb-[100px]">
+    <Element name="Education" className="text-[white] mb-[100px] px-8">
       <motion.div
         variants={fadeInDown} // assign the variants
         ref={ref}

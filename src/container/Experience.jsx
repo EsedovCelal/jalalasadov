@@ -6,12 +6,12 @@ import { motion } from "motion/react";
 const Experience = () => {
   const { ref, inView } = useInView({
     triggerOnce: false,
-    threshold: 0.3, // 30% animation will start
+    threshold: 0.03, // 30% animation will start
   });
   return (
     <Element
       name="Experience"
-      className="text-white flex flex-col items-center justify-center"
+      className="text-white flex flex-col items-center justify-center px-8"
     >
       <motion.div
         variants={fadeInDown} // assign the variants
@@ -32,7 +32,7 @@ const Experience = () => {
         </span>
       </motion.div>
       <div className="w-full border-2 border-gray-300 hidden md:block"></div>
-      <div className="flex gap-4 mt-[30px] mb-[30px]">
+      <div className="flex gap-4 mt-[30px] lg:flex-row flex-col mb-[30px]">
         <motion.div
           variants={fadeInLeft} // assign the variants
           ref={ref}
