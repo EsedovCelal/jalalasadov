@@ -2,10 +2,10 @@ import { Link } from "react-scroll";
 import { useSelector } from "react-redux";
 import translations from "../translations";
 
-const ScrollLinks = () => {
+const ScrollLinks = ({ color = "#EEEEEE" }) => {
   const language = useSelector((state) => state.language.defaultlanguage);
   const styles = {
-    link: "text-[#EEEEEE] max-[1280px]:text-[black] ml-5 cursor-pointer text-[1.25rem] relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-current after:scale-x-0 after:origin-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-left",
+    link: `text-[${color}] ml-5 cursor-pointer text-[1.25rem] relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-current after:scale-x-0 after:origin-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-left`,
   };
   return (
     <>

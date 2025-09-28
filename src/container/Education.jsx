@@ -27,7 +27,7 @@ const Education = () => {
           sustainable technologies.
         </p>
       </motion.div>
-      <div className="w-full border-2 border-gray-300 mb-[80px]"></div>
+      <div className="w-full border-2 border-gray-300 mb-[80px] hidden lg:block"></div>
       <div className="flex gap-20 justify-center">
         <motion.div
           variants={fadeInLeft} // assign the variants

@@ -14,8 +14,8 @@ const Contact_me = () => {
       <div className="text-center">
         <span className="text-6xl  text-center">Contact me</span>
       </div>
-      <div className="bg-[#012840] mt-[30px] rounded-xl p-8 lg:flex justify-between">
-        <div className="flex flex-col gap-5">
+      <div className="bg-[#012840] mt-[30px] rounded-xl p-8 lg:flex justify-between gap-20">
+        <div className="flex flex-col gap-5 mb-[30px] lg:mb-0 ">
           <span className="text-3xl capitalize">get in touch</span>
           <span className="normal-case">
             Feel free to reach out for collaborations, project inquiries, or
@@ -38,25 +38,25 @@ const Contact_me = () => {
             Send
           </button>
         </div>
-        <div className="ml-20">
-          <div className="flex items-center justify-center mb-[40px]">
+        <div className="flex flex-col gap-8 items-center">
+          <div>
             <img src={email} className="w-80 h-80" />
           </div>
-          <div className=" mb-8">
-            <div className="flex ml-5 mb-3">
+          <div>
+            <div className="flex ml-5 mb-3 items-center">
               <CiMail className="mr-4 w-10 h-8" />
               <span>esedov.celal@gmail.com</span>
             </div>
-            <div className="flex ml-5 mb-3">
+            <div className="flex ml-5 mb-3 items-center">
               <CiPhone className="mr-4 w-10 h-8" />
               <span>+994 70 264 65 59</span>
             </div>
-            <div className="flex ml-5 mb-3">
+            <div className="flex ml-5 mb-3 items-center">
               <IoLocationOutline className="mr-4 w-10 h-8" />
               <span>Baku, Azərbaycan</span>
             </div>
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex gap-2">
             <a
               href="https://www.linkedin.com/in/c%C9%99lal-%C9%99s%C9%99dov-ba404823b/"
               target="_blank"
@@ -69,7 +69,7 @@ const Contact_me = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub className="w-12 h-12 ml-2 cursor-pointer" />
+              <FaGithub className="w-12 h-12 cursor-pointer" />
             </a>
           </div>
         </div>

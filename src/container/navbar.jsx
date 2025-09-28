@@ -13,7 +13,7 @@ const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
   const styles = {
     links_when_hamburger_is_open:
-      "text-black min-[1280px]:hidden min-h-[400px] flex flex-col mt-30 items-center justify-evenly h-1/2 w-screen left-[0] absolute z-10 text-[1.25rem] bg-[rgba(255,_255,_255,_0.7)] backdrop-filter backdrop-blur",
+      "!text-red min-[1280px]:hidden min-h-[400px] flex flex-col mt-30 items-center justify-evenly h-1/2 w-screen left-[0] absolute z-10 text-[1.25rem] bg-[rgba(255,_255,_255,_0.7)] backdrop-filter backdrop-blur",
   };
   return (
     <div className="flex justify-center fixed top-0 left-0 w-full z-50 md:px-8 px-2">
@@ -124,7 +124,7 @@ const Navbar = () => {
       </div>
       {isOpen && (
         <div className={styles.links_when_hamburger_is_open}>
-          <ScrollLinks />
+          <ScrollLinks color="black" />
         </div>
       )}
     </div>

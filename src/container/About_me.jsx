@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import jalalasadov from "../assets/img/jalalasadov.jpg";
+import jalalasadov from "../assets/img/jalalasadov.png";
 import { fadeInLeft, fadeInRight } from "../tools/motion";
 import { Element } from "react-scroll";
 import { useInView } from "react-intersection-observer";
@@ -44,7 +44,10 @@ const About_me = () => {
           animate={inView ? "visible" : "hidden"}
           className="flex md:flex-col place-content-around "
         >
-          <img src={jalalasadov} className="img_about_me" />
+          <img
+            src={jalalasadov}
+            className="img_about_me object-cover object-left"
+          />
         </motion.div>
       </div>
     </Element>

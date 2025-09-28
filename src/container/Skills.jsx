@@ -35,9 +35,9 @@ const Skills = () => {
     threshold: 0.03, // 30% animation will start
   });
   return (
-    <Element name="Skills">
-      <div className="mx-[20px]">
-        <div className="flex justify-center max-h-[600px] text-[white]">
+    <Element name="Skills" className="flex justify-center">
+      <div className="mx-[50px] max-w-[1000px]">
+        <div className="flex justify-center text-[white]">
           <div>
             <motion.div
               ref={ref}
@@ -64,63 +64,57 @@ const Skills = () => {
               variants={fadeInDown}
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
-              className="flex flex-row max-h-[600px] mt-10"
+              className="grid grid-cols-2 gap-10 mt-10"
             >
-              <div className="flex flex-col justify-between my-[20px]">
-                <div>
-                  <p className="underline text-[20px] mb-[10px]">
-                    Software Engineering & Design
-                  </p>
-                  <p>
-                    OOP, System Design, Software Design Patterns, Algorithms &
-                    Data Structures, RESTful API Design, Microservices
-                    Architecture, Agile Development, Continuous
-                    Integration/Delivery
-                  </p>
-                </div>
-                <div>
-                  <p className="underline text-[20px] mb-[10px]">
-                    Cloud & DevOps
-                  </p>
-                  <p>
-                    AWS, Docker, Airflow, CI/CD (Bamboo, GitHub Actions), Git
-                  </p>
-                </div>
-                <div>
-                  <p className="underline text-[20px] mb-[10px]">
-                    Blockchain & Distributed Systems
-                  </p>
-                  <p>
-                    Smart Contracts, Blockchain Fundamentals, Distributed System
-                    Design, Consensus Algorithms
-                  </p>
-                </div>
+              <div>
+                <p className="underline text-[20px] mb-[10px] font-bold">
+                  Software Engineering & Design
+                </p>
+                <p>
+                  OOP, System Design, Software Design Patterns, Algorithms &
+                  Data Structures, RESTful API Design, Microservices
+                  Architecture, Agile Development, Continuous
+                  Integration/Delivery
+                </p>
               </div>
               <div>
-                <div>
-                  <p className="underline text-[20px] mb-[10px]">
-                    Programming Languages
-                  </p>
-                  <p>
-                    Java, JavaScript, TypeScript, C#, Python, SQL (MySQL,
-                    PostgreSQL), NoSQL (MongoDB)
-                  </p>
-                </div>
-                <div>
-                  <p className="underline text-[20px] mb-[10px]">
-                    Frameworks & Libraries
-                  </p>
-                  <p>
-                    React, React Native, Angular, Node.js, Spring Boot, Material
-                    UI
-                  </p>
-                </div>
-                <div>
-                  <p className="underline text-[20px] mb-[10px]">
-                    Testing & Automation
-                  </p>
-                  <p>JUnit, Automated Testing, Code Quality Tools</p>
-                </div>
+                <p className="underline text-[20px] mb-[10px] font-bold">
+                  Cloud & DevOps
+                </p>
+                <p>AWS, Docker, Airflow, CI/CD (Bamboo, GitHub Actions), Git</p>
+              </div>
+              <div>
+                <p className="underline text-[20px] mb-[10px] font-bold">
+                  Blockchain & Distributed Systems
+                </p>
+                <p>
+                  Smart Contracts, Blockchain Fundamentals, Distributed System
+                  Design, Consensus Algorithms
+                </p>
+              </div>
+              <div>
+                <p className="underline text-[20px] mb-[10px] font-bold">
+                  Programming Languages
+                </p>
+                <p>
+                  Java, JavaScript, TypeScript, C#, Python, SQL (MySQL,
+                  PostgreSQL), NoSQL (MongoDB)
+                </p>
+              </div>
+              <div>
+                <p className="underline text-[20px] mb-[10px] font-bold">
+                  Frameworks & Libraries
+                </p>
+                <p>
+                  React, React Native, Angular, Node.js, Spring Boot, Material
+                  UI
+                </p>
+              </div>
+              <div>
+                <p className="underline text-[20px] mb-[10px] font-bold">
+                  Testing & Automation
+                </p>
+                <p>JUnit, Automated Testing, Code Quality Tools</p>
               </div>
             </motion.div>
           </div>

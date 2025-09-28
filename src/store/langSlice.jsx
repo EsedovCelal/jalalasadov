@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  defaultlanguage: "az",
+  defaultlanguage: localStorage.getItem("language") || "az",
 };
 
 const languageSlice = createSlice({
@@ -10,6 +10,7 @@ const languageSlice = createSlice({
   reducers: {
     setlanguage: (state, action) => {
       state.defaultlanguage = action.payload;
+      localStorage.setItem("language", action.payload);
     },
   },
 });

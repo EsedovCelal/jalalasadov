@@ -1,5 +1,4 @@
-import jalalasadov from "../assets/img/jalalasadov.jpg";
-import { Box } from "@mui/material";
+import jalalasadov from "../assets/img/jalalasadov.png";
 import { motion } from "motion/react";
 import { fadeInUp, fadeInDown, fadeInRight, fadeInLeft } from "../tools/motion";
 import { Element } from "react-scroll";
@@ -19,9 +18,9 @@ const Home = () => {
   };
   return (
     <Element name="Home" className="px-8">
-      <Box className="pt-20 text-[#EEEEEE]">
-        <Box className="text-center md:text-left my-[50px] flex flex-col md:flex-row lg:flex-row items-center justify-between">
-          <Box>
+      <div className="pt-20 text-[#EEEEEE]">
+        <div className="text-center md:text-left my-[50px] flex flex-col md:flex-row lg:flex-row items-center justify-between">
+          <div>
             <motion.div
               variants={fadeInDown} // assign the variants
               ref={ref}
@@ -53,7 +52,7 @@ const Home = () => {
             >
               {translations[language]["home"]["text2"]}
             </motion.div>
-          </Box>
+          </div>
           <motion.div
             ref={ref}
             variants={fadeInRight} // assign the variants
@@ -63,11 +62,11 @@ const Home = () => {
           >
             <img
               src={jalalasadov}
-              className="w-[400px] h-[400px] bg-[#111] relative z-[99] rounded-[10px]"
+              className="w-[400px] h-[400px] bg-[#111] relative z-[99] rounded-[10px] object-cover object-left"
             />
           </motion.div>
-        </Box>
-      </Box>
+        </div>
+      </div>
     </Element>
   );
 };
