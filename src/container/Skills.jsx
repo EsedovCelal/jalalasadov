@@ -140,14 +140,14 @@ const Skills = () => {
             </motion.div>
           ))}
         </div>
-        <div className="h-[90px] relative left-1/2 right-1/2 w-screen -ml-[50vw] -mr-[50vw]">
-          <div className="w-full border-2 border-gray-300 hidden lg:block"></div>
+        <div className="h-[90px] relative left-1/2 right-1/2 w-screen -ml-[50vw] -mr-[50vw] hidden lg:block">
+          <div className="w-full border-2 border-gray-300 "></div>
           <img
             src={computer}
             alt="Banner"
-            className="h-full object-cover hidden lg:block relative left-1/2 right-1/2 w-screen -ml-[50vw] -mr-[50vw]"
+            className="h-full object-cover relative left-1/2 right-1/2 w-screen -ml-[50vw] -mr-[50vw]"
           />
-          <div className="w-full border-2 border-gray-300 hidden lg:block"></div>
+          <div className="w-full border-2 border-gray-300 "></div>
         </div>
       </div>
     </Element>

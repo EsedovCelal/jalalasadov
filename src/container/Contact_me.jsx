@@ -7,15 +7,42 @@ import { IoLocationOutline } from "react-icons/io5";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { Element } from "react-scroll";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 
 const Contact_me = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_mgd184a",
+        "template_oloyasb",
+        form.current,
+        "jMCg0Jigb24-2pAbC"
+      )
+      .then(
+        (result) => {
+          alert("Mesaj uğurla göndərildi");
+          form.current.reset();
+        },
+        (error) => {
+          alert("Xəta baş verdi" + error.text);
+        }
+      );
+  };
   return (
     <Element name="Contact me" className="text-[#EEEEEE] mb-[60px] px-8">
       <div className="text-center">
         <span className="text-6xl  text-center">Contact me</span>
       </div>
       <div className="bg-[#012840] mt-[30px] rounded-xl p-8 lg:flex justify-between gap-20">
-        <div className="flex flex-col gap-5 mb-[30px] lg:mb-0 ">
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="flex flex-col gap-5 mb-[30px] lg:mb-0 "
+        >
           <span className="text-3xl capitalize">get in touch</span>
           <span className="normal-case">
             Feel free to reach out for collaborations, project inquiries, or
@@ -23,21 +50,30 @@ const Contact_me = () => {
             and sharing ideas.
           </span>
           <input
+            name="name"
+            type="text"
             placeholder="You Name"
             className="bg-white h-12 rounded-xl placeholder:text-[lightgray] pl-2 text-[black]"
           />
           <input
+            name="email"
+            type="email"
             placeholder="You Email"
             className="bg-white h-12 rounded-xl placeholder:text-[lightgray] pl-2 text-black"
           />
           <textarea
-            placeholder="Message"
+            name="message"
+            required
+            placeholder="You message"
             className="bg-white rounded-xl placeholder:text-[lightgray] pl-2 h-[250px] pt-2 text-black"
           />
-          <button className="bg-[#F4B459] h-10 rounded-xl font-bold text-[black]">
+          <button
+            type="submit"
+            className="bg-[#F4B459] h-10 rounded-xl font-bold text-[black] cursor-pointer"
+          >
             Send
           </button>
-        </div>
+        </form>
         <div className="flex flex-col gap-8 items-center">
           <div>
             <img src={email} className="w-80 h-80" />
