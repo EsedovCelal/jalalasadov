@@ -45,13 +45,13 @@ const Experience = () => {
           </div>
           <div className="flex justify-center mb-4">
             <div className="text-[#2980B9] w-15">
-              <p className="text-5xl font-bold">3+</p>
-              <p className="font-bold">Years</p>
+              <p className="text-6xl font-bold">3+</p>
+              <p className="text-3xl font-bold">Years</p>
             </div>
             <p className="text-5xl font-bold w-15">-</p>
             <div className=" text-[#2980B9] w-15">
-              <p className="text-5xl font-bold">10+</p>
-              <p className="font-bold">Projects</p>
+              <p className="text-6xl font-bold">10+</p>
+              <p className="text-3xl font-bold">Projects</p>
             </div>
           </div>
           <div className="text-center">
