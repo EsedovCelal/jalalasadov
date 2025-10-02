@@ -20,7 +20,7 @@ const Experience = () => {
         /*    animate={inView ? "visible" : "hidden"} */
         className="text-center mt-[80px] md:mb-[80px] mb-[40px]"
       >
-        <h1 className="text-[60px]">Experience</h1>
+        <h1 className="text-6xl mb-[15px]">Experience</h1>
         <span>
           Over three years of hands-on experience delivering scalable software
           solutions across startups, academia, and enterprise environments.

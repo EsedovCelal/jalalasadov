@@ -9,7 +9,7 @@ const About_me = () => {
   const language = useSelector((state) => state.language.defaultlanguage);
   const { ref, inView } = useInView({
     triggerOnce: false,
-    threshold: 0.03, // 3% animation will start
+    threshold: 0.4, // 3% animation will start
   });
   return (
     <Element

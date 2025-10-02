@@ -18,7 +18,7 @@ const Home = () => {
   };
   return (
     <Element name="Home" className="px-8">
-      <div className="pt-20 text-[#EEEEEE]">
+      <div className="pt-25 text-[#EEEEEE]">
         <div className="text-center md:text-left my-[50px] flex flex-col md:flex-row lg:flex-row items-center justify-between">
           <div>
             <motion.div

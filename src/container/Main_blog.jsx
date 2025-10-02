@@ -7,6 +7,7 @@ import Experience from "./Experience";
 import Footer from "./Footer";
 import Education from "./Education";
 import Contact_me from "./Contact_me";
+import Projects from "./Projects";
 
 const Main_blog = () => {
   return (
@@ -26,6 +27,7 @@ const Main_blog = () => {
           <Skills />
           <Experience />
           <Education />
+          <Projects />
           <Contact_me />
           <Footer />
         </div>

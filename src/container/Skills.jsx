@@ -44,7 +44,6 @@ const Skills = () => {
               variants={fadeInUp}
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
-              className="mb-[50px]"
             >
               <h1 className="text-center text-[50px]">
                 {translations[language]["skills"]["skills"]}
@@ -57,8 +56,9 @@ const Skills = () => {
                 algorithms, and blockchain technologies, enabling robust,
                 scalable, and maintainable solutions across diverse domains
               </p>
+              <div className="w-full border-2 border-gray-300 hidden lg:block mt-[50px]"></div>
             </motion.div>
-            <div className="w-full border-2 border-gray-300 hidden lg:block"></div>
+
             <motion.div
               ref={ref}
               variants={fadeInDown}
@@ -123,7 +123,7 @@ const Skills = () => {
           {icons.map((item, i) => (
             <motion.div
               ref={ref}
-              variants={fadeInDown}
+              variants={fadeInUp}
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
               key={i}
@@ -140,7 +140,7 @@ const Skills = () => {
             </motion.div>
           ))}
         </div>
-        <div className="h-[90px] relative left-1/2 right-1/2 w-screen -ml-[50vw] -mr-[50vw] hidden lg:block">
+        <div className="h-[90px] relative left-1/2 right-1/2 w-screen -ml-[50.7vw] -mr-[50vw] hidden lg:block">
           <div className="w-full border-2 border-gray-300 "></div>
           <img
             src={computer}

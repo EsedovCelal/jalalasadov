@@ -17,7 +17,7 @@ const Line_Text = () => {
     return () => clearInterval(interval);
   }, [all_ability.length]);
   return (
-    <div className="flex justify-center bg-[#3E5F44] relative left-1/2 right-1/2 w-screen -ml-[50vw] -mr-[50vw]">
+    <div className="h-[100px] flex justify-center bg-[#3E5F44] relative left-1/2 right-1/2 w-screen -ml-[50.7vw] -mr-[50vw]">
       <div className="flex flex-col md:flex-row gap-4 lg:text-4xl text-2xl items-center text-[#EEEEEE]">
         <p className="p-10 text-3xl block md:hidden uppercase">
           {all_ability[index]}

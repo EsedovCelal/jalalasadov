@@ -35,7 +35,7 @@ const Contact_me = () => {
   return (
     <Element name="Contact me" className="text-[#EEEEEE] mb-[60px] px-8">
       <div className="text-center">
-        <span className="text-6xl  text-center">Contact me</span>
+        <span className="text-6xl">Contact me</span>
       </div>
       <div className="bg-[#012840] mt-[30px] rounded-xl p-8 lg:flex justify-between gap-20">
         <form
