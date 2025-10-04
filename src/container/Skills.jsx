@@ -34,6 +34,8 @@ const Skills = () => {
     triggerOnce: false,
     threshold: 0.03, // 30% animation will start
   });
+  const skills = [translations[language]["skills"]["items"]];
+  console.log(skills[0]);
   return (
     <Element name="Skills" className="flex justify-center">
       <div className="mx-[50px] max-w-[1000px]">
@@ -48,17 +50,9 @@ const Skills = () => {
               <h1 className="text-center text-[50px]">
                 {translations[language]["skills"]["skills"]}
               </h1>
-              <p>
-                Comprehensive skill set spanning full-stack development, cloud
-                infrastructure, distributed systems, and modern software design.
-                Proficient in key programming languages, frameworks, and
-                architectural patterns. Strong grasp of system design,
-                algorithms, and blockchain technologies, enabling robust,
-                scalable, and maintainable solutions across diverse domains
-              </p>
+              <p>{translations[language]["skills"]["text1"]}</p>
               <div className="w-full border-2 border-gray-300 hidden lg:block mt-[50px]"></div>
             </motion.div>
-
             <motion.div
               ref={ref}
               variants={fadeInDown}
@@ -66,56 +60,14 @@ const Skills = () => {
               animate={inView ? "visible" : "hidden"}
               className="grid grid-cols-2 gap-10 mt-10"
             >
-              <div>
-                <p className="underline text-[20px] mb-[10px] font-bold">
-                  Software Engineering & Design
-                </p>
-                <p>
-                  OOP, System Design, Software Design Patterns, Algorithms &
-                  Data Structures, RESTful API Design, Microservices
-                  Architecture, Agile Development, Continuous
-                  Integration/Delivery
-                </p>
-              </div>
-              <div>
-                <p className="underline text-[20px] mb-[10px] font-bold">
-                  Cloud & DevOps
-                </p>
-                <p>AWS, Docker, Airflow, CI/CD (Bamboo, GitHub Actions), Git</p>
-              </div>
-              <div>
-                <p className="underline text-[20px] mb-[10px] font-bold">
-                  Blockchain & Distributed Systems
-                </p>
-                <p>
-                  Smart Contracts, Blockchain Fundamentals, Distributed System
-                  Design, Consensus Algorithms
-                </p>
-              </div>
-              <div>
-                <p className="underline text-[20px] mb-[10px] font-bold">
-                  Programming Languages
-                </p>
-                <p>
-                  Java, JavaScript, TypeScript, C#, Python, SQL (MySQL,
-                  PostgreSQL), NoSQL (MongoDB)
-                </p>
-              </div>
-              <div>
-                <p className="underline text-[20px] mb-[10px] font-bold">
-                  Frameworks & Libraries
-                </p>
-                <p>
-                  React, React Native, Angular, Node.js, Spring Boot, Material
-                  UI
-                </p>
-              </div>
-              <div>
-                <p className="underline text-[20px] mb-[10px] font-bold">
-                  Testing & Automation
-                </p>
-                <p>JUnit, Automated Testing, Code Quality Tools</p>
-              </div>
+              {skills.map((item, index) => {
+                <div key={index}>
+                  <p className="underline text-[20px] mb-[10px] font-bold">
+                    {item.title}
+                  </p>
+                  <p>{item.desc}</p>
+                </div>;
+              })}
             </motion.div>
           </div>
         </div>

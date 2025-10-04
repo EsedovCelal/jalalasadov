@@ -5,6 +5,7 @@ import { Element } from "react-scroll";
 import { useInView } from "react-intersection-observer";
 import translations from "../translations";
 import { useSelector } from "react-redux";
+import { Link } from "react-scroll";
 const About_me = () => {
   const language = useSelector((state) => state.language.defaultlanguage);
   const { ref, inView } = useInView({
@@ -33,9 +34,11 @@ const About_me = () => {
           <span className="md:inline block mb-[30px]">
             {translations[language]["about_me"]["text2"]}
           </span>
-          <button className=" mb-[30px] h-[40px] w-[150px] cursor-pointer text-[#EEEEEE] outline-[#EEEEEE] bg-[#3E5F44] outline-1 rounded-[5px]">
-            {translations[language]["about_me"]["my_projects"]}
-          </button>
+          <Link to="Projects" smooth={true} duration={900} offset={-120}>
+            <button className=" mb-[30px] h-[40px] w-[150px] cursor-pointer text-[#EEEEEE] outline-[#EEEEEE] bg-[#3E5F44] outline-1 rounded-[5px]">
+              {translations[language]["about_me"]["my_projects"]}
+            </button>
+          </Link>
         </motion.div>
         <motion.div
           ref={ref}

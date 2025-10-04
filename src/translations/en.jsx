@@ -34,5 +34,33 @@ export default {
   },
   skills: {
     skills: "Skills",
+    text1:
+      "I have a growing skill set, primarily focused on web development. I possess solid knowledge of HTML, CSS, and JavaScript, and I actively work with the React library. Currently, I am dedicated to improving my programming skills, learning new technologies, and gaining experience in building modern web applications. My goal is to continuously grow and work on projects that are both practical and innovative.",
+    items: [
+      {
+        title: "Web Development & Design",
+        desc: "HTML, CSS, JavaScript, Building user interfaces with React, Responsive design and UI/UX principles, Basic web performance optimization",
+      },
+      {
+        title: "Programming & Learning",
+        desc: "Expanding programming skills, Introduction to algorithms and data structures, Gaining experience with modern web technologies",
+      },
+      {
+        title: "Tools & Workflow",
+        desc: "Version control with Git, Adapting to project management and teamwork (in learning phase)",
+      },
+      {
+        title: "Goal",
+        desc: "Build modern, practical, and innovative web applications, Continuously learn and improve skills",
+      },
+      {
+        title: "",
+        desc: "",
+      },
+      {
+        title: "",
+        desc: "",
+      },
+    ],
   },
 };

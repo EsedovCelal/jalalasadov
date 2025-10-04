@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import { useDispatch, useSelector } from "react-redux";
 import { setlanguage } from "../store/langSlice";
 import ScrollLinks from "./ScrollLinks";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import translations from "../translations";
 import { useNavigate } from "react-router-dom";
 
@@ -15,12 +15,14 @@ const Navbar = () => {
   const navigate = useNavigate();
   const changeLanguage = () => {
     dispatch(setlanguage(language === "az" ? "en" : "az"));
+  };
+  useEffect(() => {
     if (language === "az") {
       navigate("/");
     } else {
       navigate(`/${language}`);
     }
-  };
+  }, [language]);
   const styles = {
     links_when_hamburger_is_open:
       "!text-red min-[1280px]:hidden min-h-[400px] flex flex-col mt-30 items-center justify-evenly h-1/2 w-screen left-[0] absolute z-10 text-[1.25rem] bg-[rgba(255,_255,_255,_0.7)] backdrop-filter backdrop-blur",

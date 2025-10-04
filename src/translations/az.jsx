@@ -34,5 +34,33 @@ export default {
   },
   skills: {
     skills: "Bacarıqlar",
+    text1:
+      "Genişlənən bacarıq dəstinə sahibəm və əsasən veb inkişaf sahəsində çalışıram. HTML, CSS və JavaScript üzrə möhkəm biliklərim var, həmçinin React kitabxanasından aktiv istifadə edirəm. Hal-hazırda proqramlaşdırma bacarıqlarımı daha da təkmilləşdirməyə, yeni texnologiyalar öyrənməyə və müasir veb tətbiqləri yaratmaqda təcrübə qazanmağa çalışıram. Məqsədim daim inkişaf edərək həm praktik, həm də innovativ layihələr üzərində çalışmaqdır.",
+    items: [
+      {
+        title: "Veb İnkişaf və Dizayn",
+        desc: "HTML, CSS, JavaScript, React kitabxanası ilə interfeys inkişafı, Responsiv dizayn və UI/UX prinsipləri, Əsas veb performans optimizasiyası",
+      },
+      {
+        title: "Proqramlaşdırma və Öyrənmə",
+        desc: "Proqramlaşdırma bacarıqlarını genişləndirmə, Alqoritmlər və məlumat strukturlarına giriş, Müasir veb texnologiyaları ilə təcrübə qazanma",
+      },
+      {
+        title: "Alətlər və İş Axını",
+        desc: "Git ilə versiya nəzarəti, Layihələrin idarə edilməsi və komanda işinə uyğunlaşma (öyrənmə mərhələsində)",
+      },
+      {
+        title: "Məqsəd",
+        desc: "Müasir, praktiki və innovativ veb tətbiqləri qurmaq, Daimi öyrənmə və özünü inkişaf etdirmə",
+      },
+      {
+        title: "a",
+        desc: "a",
+      },
+      {
+        title: "b",
+        desc: "b",
+      },
+    ],
   },
 };
