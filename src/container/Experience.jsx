@@ -3,11 +3,14 @@ import { Element } from "react-scroll";
 /* import { useInView } from "react-intersection-observer"; */
 import { fadeInDown, fadeInLeft, fadeInRight, fadeInUp } from "../tools/motion";
 import { motion } from "motion/react";
+import translations from "../translations";
+import { useSelector } from "react-redux";
 const Experience = () => {
   /*   const { ref, inView } = useInView({
     triggerOnce: false,
     threshold: 0.03, // 30% animation will start
   }); */
+  const language = useSelector((state) => state.language.defaultlanguage);
   return (
     <Element
       name="Experience"
@@ -20,16 +23,10 @@ const Experience = () => {
         /*    animate={inView ? "visible" : "hidden"} */
         className="text-center mt-[80px] md:mb-[80px] mb-[40px]"
       >
-        <h1 className="text-6xl mb-[15px]">Experience</h1>
-        <span>
-          Over three years of hands-on experience delivering scalable software
-          solutions across startups, academia, and enterprise environments.
-          Proven ability to take ownership of full-stack projects, quickly adapt
-          to unfamiliar technologies, and deliver high-quality outcomes.
-          Consistently contributed to critical systems, cross-platform
-          integrations, and internal tooling that improved team efficiency and
-          business performance.
-        </span>
+        <h1 className="text-6xl mb-[15px]">
+          {translations[language]["experience"]["experience"]}
+        </h1>
+        <span>{translations[language]["experience"]["text1"]}</span>
       </motion.div>
       <div className="w-full border-2 border-gray-300 hidden md:block"></div>
       <div className="flex gap-4 lg:flex-row flex-col py-[50px] lg:w-[1000px] items-center">
@@ -90,8 +87,96 @@ const Experience = () => {
           </p>
         </motion.div>
       </div>
-      <div className="w-full border-2 border-gray-300 hidden md:block"></div>
-      <div></div>
+      <div className="w-full border-2 border-gray-300 hidden md:block mb-[50px]"></div>
+      <div className="flex md:flex-row flex-col rounded-2  gap-10 md:gap-0">
+        <div
+          className="border-2 border-dashed p-5 
+         rounded-lg w-full max-h-[300px] md:max-w-[300px] md:max-h-full"
+        >
+          <p className="font-bold">Full Stack Developer</p>
+          <p>Formpress | Ankara, Turkey</p>
+          <p>2020-2021</p>
+          <ul className="list-disc mt-[20px] mt-4 pl-4">
+            <li>Developed customizable forms using HTML, CSS, and React</li>
+            <li>
+              Enhanced functionality for both open-source and premium plans
+            </li>
+            <li>
+              Collaborated closely with a teammate on design and implementation
+            </li>
+            <li>
+              Improved platform accessibility and overall user-friendliness for
+              users
+            </li>
+          </ul>
+        </div>
+        <div className="items-center hidden md:flex">
+          <svg
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="size-10"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </div>
+        <div className="border-2 border-dashed p-5 rounded-lg w-full max-h-[300px] md:max-w-[300px] md:max-h-full">
+          <p className="font-bold">Full Stack Developer</p>
+          <p>Formpress | Ankara, Turkey</p>
+          <p>2020-2021</p>
+          <ul className="list-disc mt-[20px] mt-4 pl-4">
+            <li>Developed customizable forms using HTML, CSS, and React</li>
+            <li>
+              Enhanced functionality for both open-source and premium plans
+            </li>
+            <li>
+              Collaborated closely with a teammate on design and implementation
+            </li>
+            <li>
+              Improved platform accessibility and overall user-friendliness for
+              users
+            </li>
+          </ul>
+        </div>
+        <div className="items-center hidden md:flex">
+          <svg
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="size-10"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </div>
+        <div className="border-2 border-dashed p-5 rounded-lg w-full max-h-[300px] md:max-w-[300px] md:max-h-full">
+          <p className="font-bold">Full Stack Developer</p>
+          <p>Formpress | Ankara, Turkey</p>
+          <p>2020-2021</p>
+          <ul className="list-disc mt-[20px] mt-4 pl-4">
+            <li>Developed customizable forms using HTML, CSS, and React</li>
+            <li>
+              Enhanced functionality for both open-source and premium plans
+            </li>
+            <li>
+              Collaborated closely with a teammate on design and implementation
+            </li>
+            <li>
+              Improved platform accessibility and overall user-friendliness for
+              users
+            </li>
+          </ul>
+        </div>
+      </div>
     </Element>
   );
 };

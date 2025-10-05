@@ -35,7 +35,6 @@ const Skills = () => {
     threshold: 0.03, // 30% animation will start
   });
   const skills = [translations[language]["skills"]["items"]];
-  console.log(skills[0]);
   return (
     <Element name="Skills" className="flex justify-center">
       <div className="mx-[50px] max-w-[1000px]">
@@ -60,14 +59,14 @@ const Skills = () => {
               animate={inView ? "visible" : "hidden"}
               className="grid grid-cols-2 gap-10 mt-10"
             >
-              {skills.map((item, index) => {
+              {skills[0].map((item, index) => (
                 <div key={index}>
                   <p className="underline text-[20px] mb-[10px] font-bold">
                     {item.title}
                   </p>
                   <p>{item.desc}</p>
-                </div>;
-              })}
+                </div>
+              ))}
             </motion.div>
           </div>
         </div>

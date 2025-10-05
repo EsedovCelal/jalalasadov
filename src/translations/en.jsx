@@ -53,14 +53,11 @@ export default {
         title: "Goal",
         desc: "Build modern, practical, and innovative web applications, Continuously learn and improve skills",
       },
-      {
-        title: "",
-        desc: "",
-      },
-      {
-        title: "",
-        desc: "",
-      },
     ],
+  },
+  experience: {
+    experience: "Experience",
+    text1:
+      "Hands-on experience in web development, focusing on building modern, responsive, and functional web applications. Skilled in HTML, CSS, and JavaScript, with active experience using the React library for front-end development. Strong ability to adapt quickly to new technologies, take responsibility in projects, and deliver quality results. Currently focused on expanding programming knowledge and developing scalable, modern web applications.",
   },
 };

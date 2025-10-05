@@ -53,14 +53,11 @@ export default {
         title: "Məqsəd",
         desc: "Müasir, praktiki və innovativ veb tətbiqləri qurmaq, Daimi öyrənmə və özünü inkişaf etdirmə",
       },
-      {
-        title: "a",
-        desc: "a",
-      },
-      {
-        title: "b",
-        desc: "b",
-      },
     ],
+  },
+  experience: {
+    experience: "Təcrübə",
+    text1:
+      "Praktiki təcrübəyə əsaslanan veb inkişaf bacarıqlarına malikəm və son illərdə müasir, responsiv və funksional veb layihələr üzərində çalışıram. Front-end sahəsində HTML, CSS və JavaScript biliklərimlə yanaşı, React kitabxanası ilə interfeys inkişafında da aktivəm. Yeni texnologiyalara tez uyğunlaşmaq, layihələrdə məsuliyyət götürmək və keyfiyyətli nəticələr təqdim etmək bacarığına malikəm. Hazırda proqramlaşdırma biliklərimi genişləndirərək daha miqyaslana bilən və müasir tətbiqlər yaratmağa fokuslanmışam.",
   },
 };
