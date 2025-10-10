@@ -1,6 +1,5 @@
 import Navbar from "./navbar";
 import Home from "./Home";
-import Line_Text from "./Text_Line";
 import About_me from "./About_me";
 import Skills from "./Skills";
 import Experience from "./Experience";
@@ -11,26 +10,29 @@ import Projects from "./Projects";
 
 const Main_blog = () => {
   return (
-    <div
-      className="bg-[#010e28]
-         bg-[length:30px_30px]
-         bg-[linear-gradient(to_bottom,#082740_1px,transparent_1px),linear-gradient(to_right,#082740_1px,transparent_1px)]
-         bg-repeat
-         animate-bgmove"
-    >
+    <div className="bg-gradient-to-r from-[#1c1d31] to-[#0f0f1f]">
       <div className="max-w-[1300px] mx-auto w-full">
+        <ul class="blobs">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
         <Navbar />
-        <div>
-          <Home />
-          <Line_Text />
-          <About_me />
-          <Skills />
-          <Experience />
-          <Education />
-          <Projects />
-          <Contact_me />
-          <Footer />
-        </div>
+        <Home />
+        <About_me />
+        <Skills />
+        <Experience />
+        <Education />
+        <Projects />
+        <Contact_me />
+        <Footer />
       </div>
     </div>
   );

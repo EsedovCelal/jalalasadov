@@ -5,6 +5,7 @@ import { Element } from "react-scroll";
 import { useInView } from "react-intersection-observer";
 import translations from "../translations";
 import { useSelector } from "react-redux";
+import Line_Text from "./Text_Line";
 
 const Home = () => {
   const language = useSelector((state) => state.language.defaultlanguage);
@@ -18,9 +19,9 @@ const Home = () => {
   };
   return (
     <Element name="Home" className="px-8">
-      <div className="pt-25 text-[#EEEEEE]">
-        <div className="text-center md:text-left my-[50px] flex flex-col md:flex-row lg:flex-row items-center justify-between">
-          <div>
+      <div className="pt-[20vh] text-[#EEEEEE] h-[100vh] flex flex-col justify-between ">
+        <div className="text-center md:text-left flex flex-col md:flex-row items-center justify-between">
+          <div className="w-full md:w-[70%]">
             <motion.div
               variants={fadeInDown} // assign the variants
               ref={ref}
@@ -62,10 +63,11 @@ const Home = () => {
           >
             <img
               src={jalalasadov}
-              className="w-[400px] h-[400px] bg-[#111] relative z-[99] rounded-[10px] object-cover object-left"
+              className="w-full max-w-md h-auto mx-auto bg-[#111] relative z-[99] rounded-[10px] object-cover object-left"
             />
           </motion.div>
         </div>
+        <Line_Text />
       </div>
     </Element>
   );

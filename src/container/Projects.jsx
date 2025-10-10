@@ -18,7 +18,7 @@ const Projects = () => {
       </div>
       <div className="flex items-center justify-center">
         <div className="flex flex-col md:flex-row gap-10 max-w-[900px] items-center justify-center">
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-left w-full md:w-[70%]">
             <p className="text-3xl">Green Destination Recommender</p>
             <p className="mb-[15px] font-thin">Sep 2023 - Mar 2024</p>
             <p className="text-md">
@@ -58,7 +58,7 @@ const Projects = () => {
           <div className="border-white border transition-transform duration-400 ease-in-out hover:scale-110 rounded-[10px]">
             <img
               src={temp}
-              className="w-100 h-auto object-contain overflow-x-hidden"
+              className="w-full max-w-md h-auto mx-auto object-cover overflow-x-hidden"
             />
           </div>
         </div>

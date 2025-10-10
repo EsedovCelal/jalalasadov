@@ -70,7 +70,7 @@ const Skills = () => {
             </motion.div>
           </div>
         </div>
-        <div className="flex flex-row justify-center items-center mt-10 gap-10">
+        <div className="flex flex-wrap justify-center items-center gap-10 my-[20px]">
           {icons.map((item, i) => (
             <motion.div
               ref={ref}
