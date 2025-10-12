@@ -19,7 +19,7 @@ const Line_Text = () => {
   return (
     <div className="h-[100px] flex justify-center bg-[#479b9c] relative left-1/2 right-1/2 w-screen -ml-[50.7vw] -mr-[50vw]">
       <div className="flex flex-col md:flex-row gap-4 lg:text-4xl text-2xl items-center text-[#EEEEEE]">
-        <p className="p-10 text-3xl block md:hidden uppercase">
+        <p className="p-10 text-2xl block md:hidden uppercase">
           {all_ability[index]}
         </p>
         {all_ability.map((ability, i) => (

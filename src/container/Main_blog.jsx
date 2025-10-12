@@ -7,12 +7,13 @@ import Footer from "./Footer";
 import Education from "./Education";
 import Contact_me from "./Contact_me";
 import Projects from "./Projects";
+import Recommendations from "./Recommendations";
 
 const Main_blog = () => {
   return (
     <div className="bg-gradient-to-r from-[#1c1d31] to-[#0f0f1f]">
       <div className="max-w-[1300px] mx-auto w-full">
-        <ul class="blobs">
+        <ul className="blobs">
           <li></li>
           <li></li>
           <li></li>
@@ -31,6 +32,7 @@ const Main_blog = () => {
         <Experience />
         <Education />
         <Projects />
+        <Recommendations />
         <Contact_me />
         <Footer />
       </div>

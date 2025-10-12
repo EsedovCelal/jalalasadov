@@ -39,12 +39,12 @@ const Projects = () => {
               environmentally conscious decisions aligned with responsible
               tourism principles.
             </p>
-            <div className="flex justify-center md:justify-start mt-3 text-green-400 cursor-pointer">
-              <button className="text-2xl">View</button>
+            <div className="flex justify-center md:justify-start mt-3 text-[#479b9c] cursor-pointer">
+              <button className="text-2xl ">View</button>
               <svg
                 viewBox="0 0 20 20"
                 fill="currentColor"
-                className="size-4 bg-green-400 rounded-full ml-2 text-white"
+                className="size-4 bg-[#479b9c] rounded-full ml-2 text-white"
               >
                 <path
                   className="text-[EEEEEE]"

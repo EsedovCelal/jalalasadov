@@ -91,7 +91,7 @@ const Experience = () => {
       <div className="flex md:flex-row flex-col rounded-2  gap-10 md:gap-0">
         <div
           className="border-2 border-dashed p-5 
-         rounded-lg w-full max-h-[300px] md:max-w-[300px] md:max-h-full"
+         rounded-lg w-full md:max-h-full"
         >
           <p className="font-bold">Full Stack Developer</p>
           <p>Formpress | Ankara, Turkey</p>
@@ -125,7 +125,7 @@ const Experience = () => {
             />
           </svg>
         </div>
-        <div className="border-2 border-dashed p-5 rounded-lg w-full max-h-[300px] md:max-w-[300px] md:max-h-full">
+        <div className="border-2 border-dashed p-5 rounded-lg w-full md:max-h-full">
           <p className="font-bold">Full Stack Developer</p>
           <p>Formpress | Ankara, Turkey</p>
           <p>2020-2021</p>
@@ -158,7 +158,7 @@ const Experience = () => {
             />
           </svg>
         </div>
-        <div className="border-2 border-dashed p-5 rounded-lg w-full max-h-[300px] md:max-w-[300px] md:max-h-full">
+        <div className="border-2 border-dashed p-5 rounded-lg w-full md:max-h-full">
           <p className="font-bold">Full Stack Developer</p>
           <p>Formpress | Ankara, Turkey</p>
           <p>2020-2021</p>
