@@ -7,7 +7,7 @@ import translations from "../translations";
 import { useSelector } from "react-redux";
 import { Link } from "react-scroll";
 const About_me = () => {
-  const language = useSelector((state) => state.language.defaultlanguage);
+  const language = useSelector((state) => state.language.defaultLanguage);
   const { ref, inView } = useInView({
     triggerOnce: false,
     threshold: 0.4, // 3% animation will start

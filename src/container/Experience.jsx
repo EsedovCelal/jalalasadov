@@ -10,7 +10,7 @@ const Experience = () => {
     triggerOnce: false,
     threshold: 0.03, // 30% animation will start
   }); */
-  const language = useSelector((state) => state.language.defaultlanguage);
+  const language = useSelector((state) => state.language.defaultLanguage);
   return (
     <Element
       name="Experience"

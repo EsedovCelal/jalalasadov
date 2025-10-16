@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import translations from "../translations";
 import { useSelector } from "react-redux";
 const Line_Text = () => {
-  const language = useSelector((state) => state.language.defaultlanguage);
+  const language = useSelector((state) => state.language.defaultLanguage);
   const all_ability = [
     translations[language]["text_line"]["fast_leaner"],
     translations[language]["text_line"]["result_driven"],

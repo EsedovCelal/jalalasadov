@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 import Line_Text from "./Text_Line";
 
 const Home = () => {
-  const language = useSelector((state) => state.language.defaultlanguage);
+  const language = useSelector((state) => state.language.defaultLanguage);
   const { ref, inView } = useInView({
     triggerOnce: false,
     threshold: 0.03, // 30% animation will start

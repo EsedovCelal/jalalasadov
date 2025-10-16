@@ -7,7 +7,7 @@ import { FaHtml5, FaCss3Alt, FaReact, FaJs } from "react-icons/fa";
 import translations from "../translations";
 import { useSelector } from "react-redux";
 const Skills = () => {
-  const language = useSelector((state) => state.language.defaultlanguage);
+  const language = useSelector((state) => state.language.defaultLanguage);
   const icons = [
     {
       name: "HTML",

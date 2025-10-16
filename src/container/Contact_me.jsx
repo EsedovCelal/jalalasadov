@@ -11,6 +11,7 @@ import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 
 const Contact_me = () => {
+  const language = useSelector((state) => state.language.defaultLanguage);
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -35,7 +36,9 @@ const Contact_me = () => {
   return (
     <Element name="Contact me" className="text-[#EEEEEE] my-[60px] px-8">
       <div className="text-center">
-        <span className="text-6xl">Contact me</span>
+        <p className="normal-case text-6xl">
+          {translations[language]["contact_me"]["contact_me"]}
+        </p>
       </div>
       <div className="bg-[#012840] mt-[30px] rounded-xl p-8 lg:flex justify-between gap-20">
         <form
@@ -43,35 +46,35 @@ const Contact_me = () => {
           onSubmit={sendEmail}
           className="flex flex-col gap-5 mb-[30px] lg:mb-0 "
         >
-          <span className="text-3xl capitalize">get in touch</span>
-          <span className="normal-case">
-            Feel free to reach out for collaborations, project inquiries, or
-            just to say hello. I’m always open to discussing new opportunities
-            and sharing ideas.
-          </span>
+          <h2 className="text-3xl capitalize">
+            {translations[language]["contact_me"]["get_in_touch"]}
+          </h2>
+          <p className="normal-case">
+            {translations[language]["contact_me"]["text1"]}
+          </p>
           <input
             name="name"
             type="text"
-            placeholder="You Name"
-            className="bg-white h-12 rounded-xl placeholder:text-[lightgray] pl-2 text-[black]"
+            placeholder={translations[language]["contact_me"]["your_name"]}
+            className="bg-white h-12 rounded-xl placeholder:text-[lightgray] pl-2 text-[black] capitalize"
           />
           <input
             name="email"
             type="email"
-            placeholder="You Email"
-            className="bg-white h-12 rounded-xl placeholder:text-[lightgray] pl-2 text-black"
+            placeholder={translations[language]["contact_me"]["your_email"]}
+            className="bg-white h-12 rounded-xl placeholder:text-[lightgray] pl-2 text-black capitalize"
           />
           <textarea
             name="message"
             required
-            placeholder="You message"
-            className="bg-white rounded-xl placeholder:text-[lightgray] pl-2 h-[250px] pt-2 text-black"
+            placeholder={translations[language]["contact_me"]["your_message"]}
+            className="bg-white rounded-xl placeholder:text-[lightgray] pl-2 h-[250px] pt-2 text-black capitalize"
           />
           <button
             type="submit"
             className="bg-[#F4B459] h-10 rounded-xl font-bold text-[black] cursor-pointer"
           >
-            Send
+            {translations[language]["contact_me"]["send"]}
           </button>
         </form>
         <div className="flex flex-col gap-8 items-center">
@@ -89,7 +92,9 @@ const Contact_me = () => {
             </div>
             <div className="flex ml-5 mb-3 items-center">
               <IoLocationOutline className="mr-4 w-10 h-8" />
-              <span>Baku, Azərbaycan</span>
+              <p className=" capitalize">
+                {translations[language]["contact_me"]["baku"]}
+              </p>
             </div>
           </div>
           <div className="flex gap-2">

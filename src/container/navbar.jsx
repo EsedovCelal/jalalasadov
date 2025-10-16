@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const dispatch = useDispatch();
-  const language = useSelector((state) => state.language.defaultlanguage);
+  const language = useSelector((state) => state.language.defaultLanguage);
   const [isOpen, setOpen] = useState(false);
   const navigate = useNavigate();
   const changeLanguage = () => {

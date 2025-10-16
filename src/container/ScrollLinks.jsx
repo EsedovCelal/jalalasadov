@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import translations from "../translations";
 
 const ScrollLinks = ({ color = "#EEEEEE" }) => {
-  const language = useSelector((state) => state.language.defaultlanguage);
+  const language = useSelector((state) => state.language.defaultLanguage);
   const styles = {
     link: `text-[${color}] ml-5 cursor-pointer text-[1.25rem] relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-current after:scale-x-0 after:origin-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-left`,
   };
@@ -53,15 +53,6 @@ const ScrollLinks = ({ color = "#EEEEEE" }) => {
         offset={-120}
       >
         {translations[language]["scroll_links"]["Projects"]}
-      </Link>
-      <Link
-        to="Publications"
-        smooth={true}
-        duration={900}
-        className={styles.link}
-        offset={-120}
-      >
-        {translations[language]["scroll_links"]["Publications"]}
       </Link>
       <Link
         to="Recommendations"

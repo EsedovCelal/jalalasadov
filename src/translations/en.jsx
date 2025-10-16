@@ -60,4 +60,18 @@ export default {
     text1:
       "Hands-on experience in web development, focusing on building modern, responsive, and functional web applications. Skilled in HTML, CSS, and JavaScript, with active experience using the React library for front-end development. Strong ability to adapt quickly to new technologies, take responsibility in projects, and deliver quality results. Currently focused on expanding programming knowledge and developing scalable, modern web applications.",
   },
+  contact_me: {
+    contact_me: "Contact me",
+    get_in_touch: "get in touch",
+    text1:
+      "Feel free to reach out for collaborations, project inquiries, or just to say hello. I’m always open to discussing new opportunities and sharing ideas.",
+    your_name: "your name",
+    your_email: "your email",
+    your_message: "your message",
+    send: "Send",
+    baku: "baku, azerbaijan",
+  },
+  footer: {
+    rights: "all rights reserved.",
+  },
 };
