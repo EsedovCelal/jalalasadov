@@ -27,7 +27,6 @@
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.9.3",
     "react-scroll": "^1.9.3",
-    "react-simple-image-slider": "^2.4.1",
     "tw-elements": "^2.0.0"
   },
   "devDependencies": {
