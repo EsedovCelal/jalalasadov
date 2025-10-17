@@ -1,8 +1,7 @@
 import { Element } from "react-scroll";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
+import { fadeIn } from "../tools/motion2";
 import computer from "../assets/img/computer.jpg";
-import { fadeInDown, fadeInUp } from "../tools/motion";
-import { useInView } from "react-intersection-observer";
 import { FaHtml5, FaCss3Alt, FaReact, FaJs } from "react-icons/fa";
 import translations from "../translations";
 import { useSelector } from "react-redux";
@@ -30,21 +29,17 @@ const Skills = () => {
       style: "hover:text-cyan-400 hover:animate-spin",
     },
   ];
-  const { ref, inView } = useInView({
-    triggerOnce: false,
-    threshold: 0.03, // 30% animation will start
-  });
   const skills = [translations[language]["skills"]["items"]];
   return (
-    <Element name="Skills" className="flex justify-center">
+    <Element name="Skills" className="flex justify-center pt-[120px]">
       <div className="mx-[50px] max-w-[1000px]">
         <div className="flex justify-center text-[white]">
           <div>
             <motion.div
-              ref={ref}
-              variants={fadeInUp}
+              variants={fadeIn("right", 0)}
               initial="hidden"
-              animate={inView ? "visible" : "hidden"}
+              whileInView="show"
+              viewport={{ once: false, amount: 0.7 }}
             >
               <h1 className="text-center text-[50px]">
                 {translations[language]["skills"]["skills"]}
@@ -53,10 +48,10 @@ const Skills = () => {
               <div className="w-full border-2 border-gray-300 hidden lg:block mt-[50px]"></div>
             </motion.div>
             <motion.div
-              ref={ref}
-              variants={fadeInDown}
+              variants={fadeIn("down", 0)}
               initial="hidden"
-              animate={inView ? "visible" : "hidden"}
+              whileInView="show"
+              viewport={{ once: false, amount: 0.7 }}
               className="grid grid-cols-2 gap-10 mt-10"
             >
               {skills[0].map((item, index) => (
@@ -73,10 +68,10 @@ const Skills = () => {
         <div className="flex flex-wrap justify-center items-center gap-10 my-[20px]">
           {icons.map((item, i) => (
             <motion.div
-              ref={ref}
-              variants={fadeInUp}
+              variants={fadeIn("up", 0)}
               initial="hidden"
-              animate={inView ? "visible" : "hidden"}
+              whileInView="show"
+              viewport={{ once: false, amount: 0.7 }}
               key={i}
               className="flex flex-col items-center gap-2"
             >

@@ -15,7 +15,7 @@ export const fadeInDown = {
 
 export const fadeInLeft = {
   hidden: { opacity: 0, x: -30 },
-  visible: { opacity: 1, x: 0, transition: { duration: 2 } },
+  visible: { opacity: 1, xa: 0, transition: { duration: 2 } },
 };
 
 export const fadeInRight = {

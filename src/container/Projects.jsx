@@ -1,11 +1,17 @@
 import { Element } from "react-scroll";
-import { useInView } from "react-intersection-observer";
-import { motion } from "motion/react";
+import { fadeIn } from "../tools/motion2";
+import { motion } from "framer-motion";
 import temp from "../assets/img/temp.jpg";
 const Projects = () => {
   return (
-    <Element name="Projects" className="text-[#EEEEEE] px-8">
-      <div className="text-center">
+    <Element name="Projects" className="text-[#EEEEEE] px-8  pt-[120px]">
+      <motion.div
+        variants={fadeIn("down", 0)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.7 }}
+        className="text-center"
+      >
         <p className="text-6xl text-center mb-[15px]">Projects</p>
         <p className="text-lg text-center mb-[50px]">
           A selection of key projects showcasing my expertise in building
@@ -15,10 +21,16 @@ const Projects = () => {
           domains and tech stacks.
         </p>
         <div className="w-full border-2 border-gray-300 hidden lg:block mb-[50px]"></div>
-      </div>
+      </motion.div>
       <div className="flex items-center justify-center">
         <div className="flex flex-col md:flex-row gap-10 max-w-[900px] items-center justify-center">
-          <div className="text-center md:text-left w-full md:w-[70%]">
+          <motion.div
+            variants={fadeIn("right", 0)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.7 }}
+            className="text-center md:text-left w-full md:w-[70%]"
+          >
             <p className="text-3xl">Green Destination Recommender</p>
             <p className="mb-[15px] font-thin">Sep 2023 - Mar 2024</p>
             <p className="text-md">
@@ -54,13 +66,19 @@ const Projects = () => {
                 />
               </svg>
             </div>
-          </div>
-          <div className="border-white border transition-transform duration-400 ease-in-out hover:scale-110 rounded-[10px]">
+          </motion.div>
+          <motion.div
+            variants={fadeIn("left", 0)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.7 }}
+            className="border-white border transition-transform duration-400 ease-in-out hover:scale-110 rounded-[10px]"
+          >
             <img
               src={temp}
               className="w-full max-w-md h-auto mx-auto object-cover overflow-x-hidden"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </Element>

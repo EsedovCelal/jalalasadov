@@ -9,22 +9,10 @@ const ScrollLinks = ({ color = "#EEEEEE" }) => {
   };
   return (
     <>
-      <Link
-        to="About me"
-        smooth={true}
-        duration={900}
-        className={styles.link}
-        offset={-120}
-      >
+      <Link to="About me" smooth={true} duration={900} className={styles.link}>
         {translations[language]["scroll_links"]["About_me"]}
       </Link>
-      <Link
-        to="Skills"
-        smooth={true}
-        duration={900}
-        className={styles.link}
-        offset={-120}
-      >
+      <Link to="Skills" smooth={true} duration={900} className={styles.link}>
         {translations[language]["scroll_links"]["Skills"]}
       </Link>
       <Link
@@ -32,26 +20,13 @@ const ScrollLinks = ({ color = "#EEEEEE" }) => {
         smooth={true}
         duration={900}
         className={styles.link}
-        offset={-120}
       >
         {translations[language]["scroll_links"]["Experience"]}
       </Link>
-      <Link
-        to="Education"
-        smooth={true}
-        duration={900}
-        className={styles.link}
-        offset={-120}
-      >
+      <Link to="Education" smooth={true} duration={900} className={styles.link}>
         {translations[language]["scroll_links"]["Education"]}
       </Link>
-      <Link
-        to="Projects"
-        smooth={true}
-        duration={900}
-        className={styles.link}
-        offset={-120}
-      >
+      <Link to="Projects" smooth={true} duration={900} className={styles.link}>
         {translations[language]["scroll_links"]["Projects"]}
       </Link>
       <Link
@@ -59,7 +34,6 @@ const ScrollLinks = ({ color = "#EEEEEE" }) => {
         smooth={true}
         duration={900}
         className={styles.link}
-        offset={-120}
       >
         {translations[language]["scroll_links"]["Recommendations"]}
       </Link>

@@ -1,28 +1,23 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
+import { fadeIn } from "../tools/motion2";
 import jalalasadov from "../assets/img/jalalasadov.png";
-import { fadeInLeft, fadeInRight } from "../tools/motion";
 import { Element } from "react-scroll";
-import { useInView } from "react-intersection-observer";
 import translations from "../translations";
 import { useSelector } from "react-redux";
 import { Link } from "react-scroll";
 const About_me = () => {
   const language = useSelector((state) => state.language.defaultLanguage);
-  const { ref, inView } = useInView({
-    triggerOnce: false,
-    threshold: 0.4, // 3% animation will start
-  });
   return (
     <Element
       name="About me"
-      className="flex justify-center my-[40px] px-8 text-[#EEEEEE]"
+      className="flex justify-center px-8 text-[#EEEEEE] pt-[120px]"
     >
       <div className="md:flex justify-between md:h-[500px] mb-[30px] lg:mb-[0]">
         <motion.div
-          ref={ref}
-          variants={fadeInLeft}
+          variants={fadeIn("right", 0)}
           initial="hidden"
-          animate={inView ? "visible" : "hidden"}
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
           className="md:flex md:flex-col place-content-around mr-[40px] md:w-[60%] text-center md:text-left "
         >
           <span className="text-[3.25rem] capitalize">
@@ -41,10 +36,10 @@ const About_me = () => {
           </Link>
         </motion.div>
         <motion.div
-          ref={ref}
-          variants={fadeInRight}
+          variants={fadeIn("left", 0)}
           initial="hidden"
-          animate={inView ? "visible" : "hidden"}
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
           className="flex md:flex-col place-content-around "
         >
           <img

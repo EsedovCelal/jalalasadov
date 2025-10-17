@@ -34,7 +34,10 @@ const Contact_me = () => {
       );
   };
   return (
-    <Element name="Contact me" className="text-[#EEEEEE] my-[60px] px-8">
+    <Element
+      name="Contact me"
+      className="text-[#EEEEEE] pt-[120px] pb-[80px] px-8"
+    >
       <div className="text-center">
         <p className="normal-case text-6xl">
           {translations[language]["contact_me"]["contact_me"]}

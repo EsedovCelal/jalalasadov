@@ -1,20 +1,15 @@
 import { Element } from "react-scroll";
-import { motion } from "motion/react";
-import { fadeInDown, fadeInLeft, fadeInRight } from "../tools/motion";
-import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
+import { fadeIn } from "../tools/motion2";
 const Education = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: false,
-    threshold: 0.03, // 30% animation will start
-  });
   return (
-    <Element name="Education" className="text-[white] mb-[100px] px-8">
+    <Element name="Education" className="text-[white] px-8 pt-[120px]">
       <motion.div
-        variants={fadeInDown} // assign the variants
-        ref={ref}
-        initial="hidden" // start at "hidden"
-        animate={inView ? "visible" : "hidden"}
-        className="text-center mt-[80px] mb-[80px]"
+        variants={fadeIn("down", 0)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.7 }}
+        className="text-center mb-[80px]"
       >
         <p className="text-[60px]">Education</p>
         <p>
@@ -30,10 +25,10 @@ const Education = () => {
       <div className="w-full border-2 border-gray-300 mb-[80px] hidden lg:block"></div>
       <div className="md:flex md:gap-20 md:justify-center">
         <motion.div
-          variants={fadeInLeft} // assign the variants
-          ref={ref}
-          initial="hidden" // start at "hidden"
-          animate={inView ? "visible" : "hidden"}
+          variants={fadeIn("right", 0)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
         >
           <div className="mb-4">
             <p className="text-[#2980B9]">Bilkent University</p>
@@ -59,10 +54,10 @@ const Education = () => {
           </ul>
         </motion.div>
         <motion.div
-          variants={fadeInRight} // assign the variants
-          ref={ref}
-          initial="hidden" // start at "hidden"
-          animate={inView ? "visible" : "hidden"}
+          variants={fadeIn("left", 0)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
         >
           <div className="mb-4">
             <p className="text-[#2980B9]">Bilkent University</p>

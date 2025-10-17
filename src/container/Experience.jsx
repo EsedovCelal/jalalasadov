@@ -1,27 +1,22 @@
 import Computer from "../assets/img/computer.jpg";
 import { Element } from "react-scroll";
-/* import { useInView } from "react-intersection-observer"; */
-import { fadeInDown, fadeInLeft, fadeInRight, fadeInUp } from "../tools/motion";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import translations from "../translations";
 import { useSelector } from "react-redux";
+import { fadeIn } from "../tools/motion2";
 const Experience = () => {
-  /*   const { ref, inView } = useInView({
-    triggerOnce: false,
-    threshold: 0.03, // 30% animation will start
-  }); */
   const language = useSelector((state) => state.language.defaultLanguage);
   return (
     <Element
       name="Experience"
-      className="text-white flex flex-col items-center justify-center px-8"
+      className="text-white flex flex-col items-center justify-center px-8 pt-[120px]"
     >
       <motion.div
-        variants={fadeInDown} // assign the variants
-        /*      ref={ref} */
-        initial="visible" // start at "hidden"
-        /*    animate={inView ? "visible" : "hidden"} */
-        className="text-center mt-[80px] md:mb-[80px] mb-[40px]"
+        variants={fadeIn("right", 0)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.7 }}
+        className="text-center md:mb-[80px] mb-[40px]"
       >
         <h1 className="text-6xl mb-[15px]">
           {translations[language]["experience"]["experience"]}
@@ -31,10 +26,10 @@ const Experience = () => {
       <div className="w-full border-2 border-gray-300 hidden md:block"></div>
       <div className="flex gap-4 lg:flex-row flex-col py-[50px] lg:w-[1000px] items-center">
         <motion.div
-          variants={fadeInLeft} // assign the variants
-          /*   ref={ref} */
-          initial="visible" // start at "hidden"
-          /*           animate={inView ? "visible" : "hidden"} */
+          variants={fadeIn("left", 0)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
           className="lg:basis-1/3 text-center w-[300px]"
         >
           <div className="mb-4">
@@ -62,19 +57,19 @@ const Experience = () => {
           </div>
         </motion.div>
         <motion.div
-          variants={fadeInUp} // assign the variants
-          /*           ref={ref} */
-          initial="visible" // start at "hidden"
-          /*         animate={inView ? "visible" : "hidden"} */
+          variants={fadeIn("down", 0)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
           className="lg:basis-1/3 w-[300px]"
         >
           <img src={Computer} className="w-full h-[350px] rounded-full" />
         </motion.div>
         <motion.div
-          variants={fadeInRight} // assign the variants
-          /*           ref={ref} */
-          initial="visible" // start at "hidden"
-          /*           animate={inView ? "visible" : "hidden"} */
+          variants={fadeIn("right", 0)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
           className="lg:basis-1/3 text-center border-1 border-indigo-500 rounded-md p-6 w-full h-auto"
         >
           <p className="text-lg">
@@ -88,7 +83,13 @@ const Experience = () => {
         </motion.div>
       </div>
       <div className="w-full border-2 border-gray-300 hidden md:block mb-[50px]"></div>
-      <div className="flex md:flex-row flex-col rounded-2  gap-10 md:gap-0">
+      <motion.div
+        variants={fadeIn("down", 0)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.1 }}
+        className="flex md:flex-row flex-col rounded-2 gap-10 md:gap-0"
+      >
         <div
           className="border-2 border-dashed p-5 
          rounded-lg w-full md:max-h-full"
@@ -96,7 +97,7 @@ const Experience = () => {
           <p className="font-bold">Full Stack Developer</p>
           <p>Formpress | Ankara, Turkey</p>
           <p>2020-2021</p>
-          <ul className="list-disc mt-[20px] mt-4 pl-4">
+          <ul className="list-disc mt-[20px] pl-4">
             <li>Developed customizable forms using HTML, CSS, and React</li>
             <li>
               Enhanced functionality for both open-source and premium plans
@@ -129,7 +130,7 @@ const Experience = () => {
           <p className="font-bold">Full Stack Developer</p>
           <p>Formpress | Ankara, Turkey</p>
           <p>2020-2021</p>
-          <ul className="list-disc mt-[20px] mt-4 pl-4">
+          <ul className="list-disc mt-[20px] pl-4">
             <li>Developed customizable forms using HTML, CSS, and React</li>
             <li>
               Enhanced functionality for both open-source and premium plans
@@ -162,7 +163,7 @@ const Experience = () => {
           <p className="font-bold">Full Stack Developer</p>
           <p>Formpress | Ankara, Turkey</p>
           <p>2020-2021</p>
-          <ul className="list-disc mt-[20px] mt-4 pl-4">
+          <ul className="list-disc mt-[20px] pl-4">
             <li>Developed customizable forms using HTML, CSS, and React</li>
             <li>
               Enhanced functionality for both open-source and premium plans
@@ -176,7 +177,7 @@ const Experience = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </motion.div>
     </Element>
   );
 };
