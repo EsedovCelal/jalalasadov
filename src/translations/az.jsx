@@ -59,6 +59,8 @@ export default {
     experience: "Təcrübə",
     text1:
       "Praktiki təcrübəyə əsaslanan veb inkişaf bacarıqlarına malikəm və son illərdə müasir, responsiv və funksional veb layihələr üzərində çalışıram. Front-end sahəsində HTML, CSS və JavaScript biliklərimlə yanaşı, React kitabxanası ilə interfeys inkişafında da aktivəm. Yeni texnologiyalara tez uyğunlaşmaq, layihələrdə məsuliyyət götürmək və keyfiyyətli nəticələr təqdim etmək bacarığına malikəm. Hazırda proqramlaşdırma biliklərimi genişləndirərək daha miqyaslana bilən və müasir tətbiqlər yaratmağa fokuslanmışam.",
+    text2: "",
+    text3: "",
   },
   contact_me: {
     contact_me: "Mənimlə əlaqə",
