@@ -60,6 +60,40 @@ export default {
     text1:
       "Hands-on experience in web development, focusing on building modern, responsive, and functional web applications. Skilled in HTML, CSS, and JavaScript, with active experience using the React library for front-end development. Strong ability to adapt quickly to new technologies, take responsibility in projects, and deliver quality results. Currently focused on expanding programming knowledge and developing scalable, modern web applications.",
   },
+  education: {},
+  projects: {
+    project0: {
+      name: "Simple css based project",
+      during: "October 2022",
+      description:
+        "This project is the first work I created during my initial learning period of HTML and CSS. The main goal of the project was to understand the fundamental structure of web pages and the basic principles of design. During the development process, I applied coding rules, page layout techniques, and styling methods in a practical way. This work helped me gain technical knowledge and develop my creative thinking skills in the field of web development. Although simple, the project played an important role in my learning process and motivated me to create more professional web projects in the future. Through this experience, I learned the core principles of web design, observed how code transforms into a real result, and deepened my interest in this field.",
+    },
+    project1: {
+      name: "TO-DO LIST",
+      during: "November 2022",
+      description:
+        "This project is my second work, a simple yet functional To-Do List application. In this project, I can add personal tasks, edit them when necessary, or delete them once completed. The main purpose of developing this project was to strengthen my understanding of user interaction on a web page. I used HTML to structure the interface and JavaScript to add interactivity and functionality. Through this project, I learned how to manipulate the DOM, handle user inputs, and update elements dynamically without reloading the page. Although the project is small in scale, it helped me strengthen my JavaScript knowledge and improved my ability to connect logic with design. This experience enhanced my problem-solving skills and motivated me to work on more advanced interactive web applications in the future.",
+    },
+    project2: {
+      name: "Exchange",
+      during: "December 2022",
+      description:
+        "This project is my third work and it is an Exchange (currency conversion) application. In this project, I use fetch to retrieve data for different currencies and display it to the user in a clear and organized way. Users can also convert currencies in the opposite direction. Through this project, I learned how to structure the interface using HTML and create visual design with CSS. The project provided practical experience in working with real-time data, handling user interaction, and ensuring that design aligns with functionality. Although simple, the project expanded my web development knowledge and gave me experience for creating more advanced interactive applications in the future.",
+    },
+    project3: {
+      name: "Movie List",
+      during: "January 2023",
+      description:
+        "This project is my next work and it is a personal Movie List application. In this project, users enter a movie title in the input field, and using fetch, information about the movie is retrieved and displayed on the screen. Additionally, users can create their own personal movie list and add their favorite movies to it. The project taught me how to structure the interface with HTML, design it with CSS, and manage user interaction in a practical way. Through this project, I gained experience working with real-time data and creating dynamic page elements based on user actions. Although simple, the project enhanced my web development skills and motivated me to build more complex interactive applications in the future.",
+    },
+    project4: {
+      name: "Coin collection",
+      during: "Febuary 2023",
+      description:
+        "This project is my latest work and it is a Coin Collection website. I developed this application using HTML, CSS, React, and Node.js. Through this project, I learned how to manage data from a MySQL database and how to work with databases in real-world applications. Users can create their own coin collections, add new coins, or remove existing ones.The project also includes user account creation (Sign Up) and login (Log In) functionality. Users cannot access subsequent pages without logging in. Additionally, users can create their own passwords and securely log into the system. This feature provided a practical understanding of authentication principles and ensured a secure user experience.This project gave me hands-on experience with front-end and back-end integration, improved my skills in working with databases, and helped me better understand user interaction design. Moreover, using React and Node.js, I learned how to build a dynamic and interactive application. This project significantly enhanced my web development skills and provided the experience necessary to tackle more complex projects in the future.",
+    },
+  },
+  recommendations: {},
   contact_me: {
     contact_me: "Contact me",
     get_in_touch: "get in touch",
