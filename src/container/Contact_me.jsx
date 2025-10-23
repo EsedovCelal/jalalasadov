@@ -82,7 +82,7 @@ const Contact_me = () => {
         </form>
         <div className="flex flex-col gap-8 items-center">
           <div>
-            <img src={email} className="w-80 h-80" />
+            <img src={email} className="w-60 md:w-80 h-60 md:h-80" />
           </div>
           <div>
             <div className="flex ml-5 mb-3 items-center">

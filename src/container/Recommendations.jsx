@@ -34,7 +34,7 @@ const Recommendations = () => {
         <div className="flex justify-center items-center ">
           <img src={temp2} className="w-full h-auto object-cover max-w-200" />
         </div>
-        <div className="flex justify-center imtes-center">
+        <div className="flex justify-center items-center">
           <a
             className="text-2xl text-[#479b9c] cursor-pointer pt-[20px]"
             href="https://www.linkedin.com/in/c%C9%99lal-%C9%99s%C9%99dov-ba404823b/"

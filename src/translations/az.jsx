@@ -73,6 +73,7 @@ export default {
       description:
         "Bu layihə mənim HTML və CSS öyrənməyə başladığım dövrdə hazırladığım ilk işimdir. Layihənin əsas məqsədi veb səhifələrin strukturunun və dizayn prinsiplərinin əsaslarını mənimsəmək idi. Hazırlanma prosesi zamanı kodlaşdırma qaydalarını, səhifə elementlərinin quruluşunu və üslublandırma üsullarını praktik şəkildə tətbiq etdim. Bu iş mənə həm texniki biliklər qazandırdı, həm də veb inkişaf sahəsində yaradıcı düşüncə bacarığımı inkişaf etdirdi. Layihə sadə olsa da, öyrənmə prosesində mühüm rol oynadı və gələcəkdə daha peşəkar veb layihələr hazırlamaq üçün mənə motivasiya verdi. Bu təcrübə sayəsində veb dizaynın əsas prinsiplərini öyrənərək, kodun real nəticəyə çevrilməsini müşahidə etdim və bu, sahəyə olan marağımı daha da artırdı.",
       photo: "https://i.postimg.cc/7Y2BQpbf/m0-project.png",
+      link: "https://github.com/hasanlee/m1-project-acb.git",
     },
     project1: {
       name: "TO-DO LIST",
@@ -80,6 +81,7 @@ export default {
       description:
         "Bu layihə mənim ikinci işimdir və sadə, lakin funksional bir To-Do List tətbiqidir. Bu layihədə mən öz şəxsi tapşırıqlarımı əlavə edə, onları lazım olduqda redaktə edə və ya tamamlandıqda silə bilirəm. Layihənin əsas məqsədi veb səhifədə istifadəçi ilə qarşılıqlı əlaqəni anlamağı gücləndirmək idi. Mən HTML-dən interfeysi qurmaq üçün və JavaScript-dən interaktivlik və funksionallıq əlavə etmək üçün istifadə etdim. Bu layihə vasitəsilə mən DOM-u manipulyasiya etməyi, istifadəçi girişlərini idarə etməyi və səhifəni yenidən yükləmədən elementləri dinamik olaraq yeniləməyi öyrəndim. Layihə kiçik olsa da, JavaScript biliklərimi möhkəmləndirdi və məntiği dizaynla birləşdirmək bacarığımı artırdı. Bu təcrübə mənim problem həll etmə qabiliyyətimi inkişaf etdirdi və gələcəkdə daha mürəkkəb interaktiv veb tətbiqləri yaratmaq üçün motivasiya verdi.",
       photo: "https://i.postimg.cc/kgDWpSTL/m1-project.png",
+      link: "https://github.com/EsedovCelal/M2-project.git",
     },
     project2: {
       name: "Valuta mübadiləsi",
@@ -87,6 +89,7 @@ export default {
       description:
         "Bu layihə mənim üçüncü işimdir və Exchange (valyuta dəyişimi) tətbiqidir. Layihədə fetch istifadə edərək müxtəlif valyutaların məlumatlarını alıram və onları istifadəçiyə yeni, oxunaqlı formada göstərirəm. İstəyən istifadəçi valyutaları əks istiqamətdə də çevirə bilir. Bu layihə vasitəsilə mən HTML ilə interfeysi qurmağı və CSS ilə vizual dizayn yaratmağı öyrəndim. Layihənin hazırlanması mənə real vaxt məlumatları ilə işləməyi, istifadəçi ilə qarşılıqlı əlaqəni idarə etməyi və dizaynın funksionallıqla uyğunlaşmasını praktik olaraq göstərdi. Layihə sadə olsa da, veb inkişaf biliklərimi genişləndirdi və gələcəkdə daha mürəkkəb interaktiv tətbiqlər yaratmaq üçün təcrübə qazandırdı.",
       photo: "https://i.postimg.cc/vTQ0gBGM/m2-project.png",
+      link: "https://github.com/EsedovCelal/M3-project.git",
     },
     project3: {
       name: "Movie List",
@@ -94,6 +97,7 @@ export default {
       description:
         "Bu layihə mənim növbəti işimdir və şəxsi Film Listi tətbiqidir. Layihədə istifadəçi inputa film adı daxil edir və fetch vasitəsilə həmin film haqqında məlumatları alır və ekranda göstərir. Bundan əlavə, istifadəçi öz şəxsi film listini yarada və orada sevdiyi filmləri əlavə edə bilir. Layihə mənə HTML ilə interfeysi qurmağı və CSS ilə dizayn yaratmağı, həmçinin istifadəçi ilə qarşılıqlı əlaqəni idarə etməyi praktik şəkildə öyrətdi. Bu layihə vasitəsilə mən real vaxt məlumatları ilə işləməyi və istifadəçinin fəaliyyətinə əsaslanan dinamik səhifə elementlərini yaratmağı təcrübədə gördüm. Layihə sadə olsa da, veb inkişaf bacarıqlarımı inkişaf etdirdi və gələcəkdə daha mürəkkəb interaktiv tətbiqlər yaratmaq üçün motivasiya verdi.",
       photo: "https://i.postimg.cc/JzBGX560/m3-project.png",
+      link: "https://github.com/EsedovCelal/bootcamp-m4-starter.git",
     },
     project4: {
       name: "Qəpik kolleksiyası",
@@ -101,6 +105,7 @@ export default {
       description:
         "Bu layihə mənim ən növbəti işimdir və Qəpik Kolleksiyası saytıdır. Layihəni hazırlayarkən HTML, CSS, React və Node.js texnologiyalarından istifadə etdim. Bu tətbiqdə MySQL verilənlər bazasından məlumatları idarə etməyi və real tətbiqlərdə database ilə işləməyi öyrəndim. İstifadəçi sayt üzərində öz qəpik kolleksiyasını yarada, mövcud qəpikləri əlavə edə və ya silə bilir.Layihədə həmçinin istifadəçi hesabı yaradılması (Sign Up) və daxil olma (Log In) funksionallığı mövcuddur. İstifadəçi hesabına daxil olmadıqda, növbəti səhifələrə keçid imkanı yoxdur. Bununla yanaşı, istifadəçi öz parolunu yaradaraq sistemə daxil ola bilir. Bu funksiya təhlükəsiz istifadəçi təcrübəsi təmin edir və autentifikasiya prinsiplərini praktik olaraq öyrənməyimə imkan verdi.Bu layihə mənə front-end və back-end inteqrasiyasını praktik şəkildə öyrətdi, verilənlər bazası ilə işləmək bacarığımı inkişaf etdirdi və istifadəçi ilə qarşılıqlı əlaqə dizaynını daha dərindən anlamama kömək etdi. Həmçinin, React və Node.js istifadə edərək dinamik və interaktiv bir tətbiqin necə qurulduğunu öyrəndim. Bu layihə mənim veb inkişaf bacarıqlarımı yeni səviyyəyə qaldırdı və daha mürəkkəb layihələr hazırlamaq üçün təcrübə qazandırdı.",
       photo: "https://i.postimg.cc/FK4sL5kP/temp2.jpg",
+      link: "https://github.com/EsedovCelal/M5-project.git",
     },
     view: "Bax",
   },

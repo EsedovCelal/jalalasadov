@@ -29,7 +29,7 @@ const About_me = () => {
           <span className="md:inline block mb-[30px]">
             {translations[language]["about_me"]["text2"]}
           </span>
-          <Link to="Projects" smooth={true} duration={900} offset={-120}>
+          <Link to="Projects" smooth={true} duration={900}>
             <button className=" mb-[30px] h-[40px] w-[150px] cursor-pointer text-[#EEEEEE] outline-[#EEEEEE] hover:bg-[#479b9c] hover:text-indigo-600 capitalize transition-all outline-1 rounded-[5px] ">
               {translations[language]["about_me"]["my_projects"]}
             </button>

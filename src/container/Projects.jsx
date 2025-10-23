@@ -16,7 +16,6 @@ const Projects = () => {
     }
     setProjectList(list);
   }, [language]);
-
   return (
     <Element name="Projects" className="text-[#EEEEEE] px-8  pt-[120px]">
       <motion.div
@@ -44,28 +43,28 @@ const Projects = () => {
               variants={fadeIn("right", 0)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: false, amount: 0.1 }}
               className="text-center md:text-left w-full md:w-[70%]"
             >
               <p className="text-3xl">{project.name}</p>
               <p className="mb-[15px] font-thin">{project.during}</p>
-              <p className="text-md">{project.description}</p>
-              <div className="flex justify-center md:justify-start mt-3 text-[#479b9c] cursor-pointer items-center">
-                <button className="text-2xl ">
+              <p className="text-md font-light">{project.description}</p>
+              <div className="flex justify-center md:justify-start mt-3 text-[#479b9c] cursor-pointer">
+                <a className="text-2xl flex items-center" href={project.link}>
                   {translations[language]["projects"]["view"]}
-                </button>
-                <svg
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="size-4 bg-[#479b9c] rounded-full ml-2 text-white"
-                >
-                  <path
-                    className="text-[EEEEEE]"
-                    fillRule="evenodd"
-                    d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z"
-                    clipRule="evenodd"
-                  />
-                </svg>
+                  <svg
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="size-4 bg-[#479b9c] rounded-full ml-2 text-white"
+                  >
+                    <path
+                      className="text-[EEEEEE]"
+                      fillRule="evenodd"
+                      d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </a>
               </div>
             </motion.div>
             <motion.div
@@ -73,11 +72,11 @@ const Projects = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.7 }}
-              className="border-white border transition-transform duration-400 ease-in-out hover:scale-110 rounded-[10px]"
+              className="border-white border transition-transform duration-400 ease-in-out hover:scale-110 rounded-[10px]  overflow-hidden"
             >
               <img
                 src={project.photo}
-                className="w-full max-w-md h-auto mx-auto object-cover overflow-x-hidden"
+                className="w-full max-w-md h-auto mx-auto object-cover"
                 alt={`m${index}_project`}
               />
             </motion.div>

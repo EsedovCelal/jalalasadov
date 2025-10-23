@@ -14,7 +14,7 @@ const Home = () => {
   };
   return (
     <Element name="Home" className="px-8">
-      <div className="pt-[10vh] text-[#EEEEEE]">
+      <div className="pt-[15vh] md:pt-[10vh] text-[#EEEEEE]">
         <div className="text-center md:text-left flex flex-col md:flex-row items-center justify-between py-[7vh]">
           <div className="w-full md:w-[70%]">
             <motion.div

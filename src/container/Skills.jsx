@@ -44,7 +44,9 @@ const Skills = () => {
               <h1 className="text-center text-[50px]">
                 {translations[language]["skills"]["skills"]}
               </h1>
-              <p>{translations[language]["skills"]["text1"]}</p>
+              <p className="text-center">
+                {translations[language]["skills"]["text1"]}
+              </p>
               <div className="w-full border-2 border-gray-300 hidden lg:block mt-[50px]"></div>
             </motion.div>
             <motion.div
@@ -55,7 +57,7 @@ const Skills = () => {
               className="grid grid-cols-2 gap-10 mt-10"
             >
               {skills[0].map((item, index) => (
-                <div key={index}>
+                <div key={index} className="text-center">
                   <p className="underline text-[20px] mb-[10px] font-bold">
                     {item.title}
                   </p>
@@ -68,7 +70,7 @@ const Skills = () => {
         <div className="flex flex-wrap justify-center items-center gap-10 my-[20px]">
           {icons.map((item, i) => (
             <motion.div
-              variants={fadeIn("up", 0)}
+              variants={fadeIn("up", i / 5)}
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.7 }}
