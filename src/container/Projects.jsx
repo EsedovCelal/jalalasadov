@@ -4,10 +4,6 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import translations from "../translations";
-import m1_project from "../assets/img/m1_project.png";
-import m2_project from "../assets/img/m2_project.png";
-import m3_project from "../assets/img/m3_project.png";
-import m4_project from "../assets/img/m4_project.png";
 const Projects = () => {
   const language = useSelector((state) => state.language.defaultLanguage);
   const [projectList, setProjectList] = useState([]);
@@ -19,8 +15,7 @@ const Projects = () => {
       i++;
     }
     setProjectList(list);
-  }, []);
-  projectList.map((project) => console.log(project));
+  }, [language]);
 
   return (
     <Element name="Projects" className="text-[#EEEEEE] px-8  pt-[120px]">
@@ -31,13 +26,11 @@ const Projects = () => {
         viewport={{ once: false, amount: 0.7 }}
         className="text-center"
       >
-        <p className="text-6xl text-center mb-[15px]">Projects</p>
+        <p className="text-6xl text-center mb-[15px]">
+          {translations[language]["projects"]["projects"]}
+        </p>
         <p className="text-lg text-center mb-[50px]">
-          A selection of key projects showcasing my expertise in building
-          scalable, maintainable, and user-focused software solutions. These
-          projects reflect my ability to quickly learn new technologies, tackle
-          complex challenges, and deliver high-quality results across diverse
-          domains and tech stacks.
+          {translations[language]["projects"]["text1"]}
         </p>
         <div className="w-full border-2 border-gray-300 hidden lg:block mb-[50px]"></div>
       </motion.div>
@@ -57,8 +50,10 @@ const Projects = () => {
               <p className="text-3xl">{project.name}</p>
               <p className="mb-[15px] font-thin">{project.during}</p>
               <p className="text-md">{project.description}</p>
-              <div className="flex justify-center md:justify-start mt-3 text-[#479b9c] cursor-pointer">
-                <button className="text-2xl ">View</button>
+              <div className="flex justify-center md:justify-start mt-3 text-[#479b9c] cursor-pointer items-center">
+                <button className="text-2xl ">
+                  {translations[language]["projects"]["view"]}
+                </button>
                 <svg
                   viewBox="0 0 20 20"
                   fill="currentColor"
@@ -81,7 +76,7 @@ const Projects = () => {
               className="border-white border transition-transform duration-400 ease-in-out hover:scale-110 rounded-[10px]"
             >
               <img
-                src={`../assets/img/m${index}_project.png`}
+                src={project.photo}
                 className="w-full max-w-md h-auto mx-auto object-cover overflow-x-hidden"
                 alt={`m${index}_project`}
               />
