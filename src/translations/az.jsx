@@ -59,7 +59,11 @@ export default {
     experience: "Təcrübə",
     text1:
       "Praktiki təcrübəyə əsaslanan veb inkişaf bacarıqlarına malikəm və son illərdə müasir, responsiv və funksional veb layihələr üzərində çalışıram. Front-end sahəsində HTML, CSS və JavaScript biliklərimlə yanaşı, React kitabxanası ilə interfeys inkişafında da aktivəm. Yeni texnologiyalara tez uyğunlaşmaq, layihələrdə məsuliyyət götürmək və keyfiyyətli nəticələr təqdim etmək bacarığına malikəm. Hazırda proqramlaşdırma biliklərimi genişləndirərək daha miqyaslana bilən və müasir tətbiqlər yaratmağa fokuslanmışam.",
-    text2: "",
+    since: "2022-ci ildən",
+    years: "il",
+    projects: "layihə",
+    text2:
+      "Dinamik və vizual cəhətdən cəlbedici veb tətbiqləri hazırlamaq sahəsində praktiki təcrübəyə malik Frontend Developer. HTML, CSS, JavaScript və React vasitəsilə mürəkkəb fikirləri intuitiv və responsiv interfeyslərə çevirmək bacarığına sahibdir. Təmiz, səmərəli və strukturlaşdırılmış kod yazmağa, eləcə də dizayn və performans optimallaşdırması vasitəsilə istifadəçi təcrübəsini davamlı şəkildə təkmilləşdirməyə həvəs göstərir.",
     text3: "",
   },
   education: {},

@@ -68,11 +68,11 @@ const Projects = () => {
               </div>
             </motion.div>
             <motion.div
-              variants={fadeIn("left", 0)}
+              variants={fadeIn("down", 0)}
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.7 }}
-              className="border-white border transition-transform duration-400 ease-in-out hover:scale-110 rounded-[10px]  overflow-hidden"
+              className="border-white border transition-transform duration-400 ease-in-out hover:scale-110 rounded-[10px] overflow-hidden"
             >
               <img
                 src={project.photo}

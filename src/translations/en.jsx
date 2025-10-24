@@ -59,6 +59,12 @@ export default {
     experience: "Experience",
     text1:
       "Hands-on experience in web development, focusing on building modern, responsive, and functional web applications. Skilled in HTML, CSS, and JavaScript, with active experience using the React library for front-end development. Strong ability to adapt quickly to new technologies, take responsibility in projects, and deliver quality results. Currently focused on expanding programming knowledge and developing scalable, modern web applications.",
+    since: "since 2022",
+    years: "Years",
+    projects: "Projects",
+    text2:
+      "Dedicated Frontend Developer with hands-on experience crafting dynamic and visually engaging web applications. Skilled in turning complex ideas into intuitive, responsive interfaces using HTML, CSS, JavaScript, and React. Passionate about writing efficient, structured code and continuously enhancing user interaction through clean design and performance optimization.",
+    text3: "",
   },
   education: {},
   projects: {

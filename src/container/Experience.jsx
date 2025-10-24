@@ -33,27 +33,28 @@ const Experience = () => {
           className="lg:basis-1/3 text-center w-[300px]"
         >
           <div className="mb-4">
-            <p className="text-3xl uppercase">since 2021</p>
+            <p className="text-3xl uppercase">
+              {translations[language]["experience"]["since"]}
+            </p>
           </div>
           <div className="flex justify-center mb-4">
             <div className="text-[#2980B9] w-15">
               <p className="text-6xl font-bold">3+</p>
-              <p className="text-3xl font-bold">Years</p>
+              <p className="text-3xl font-bold">
+                {translations[language]["experience"]["years"]}
+              </p>
             </div>
             <p className="text-5xl font-bold w-15">-</p>
             <div className=" text-[#2980B9] w-15">
-              <p className="text-6xl font-bold">10+</p>
-              <p className="text-3xl font-bold">Projects</p>
+              <p className="text-6xl font-bold">5+</p>
+              <p className="text-3xl font-bold">
+                {" "}
+                {translations[language]["experience"]["projects"]}
+              </p>
             </div>
           </div>
           <div className="text-center">
-            <p>
-              Versatile Full Stack Developer with 3+ years of experience
-              building modern web applications across varied tech stacks. Known
-              for quickly mastering unfamiliar tools and consistently delivering
-              production-ready solutions that improve efficiency, scalability,
-              and user experience.
-            </p>
+            <p>{translations[language]["experience"]["text2"]}</p>
           </div>
         </motion.div>
         <motion.div
