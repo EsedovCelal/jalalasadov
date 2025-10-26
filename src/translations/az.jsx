@@ -64,9 +64,41 @@ export default {
     projects: "layihə",
     text2:
       "Dinamik və vizual cəhətdən cəlbedici veb tətbiqləri hazırlamaq sahəsində praktiki təcrübəyə malik Frontend Developer. HTML, CSS, JavaScript və React vasitəsilə mürəkkəb fikirləri intuitiv və responsiv interfeyslərə çevirmək bacarığına sahibdir. Təmiz, səmərəli və strukturlaşdırılmış kod yazmağa, eləcə də dizayn və performans optimallaşdırması vasitəsilə istifadəçi təcrübəsini davamlı şəkildə təkmilləşdirməyə həvəs göstərir.",
-    text3: "",
+    text3:
+      "Mən HTML, CSS, JavaScript və React vasitəsilə responsiv və səmərəli frontend tətbiqləri hazırlamaqda ixtisaslaşıram. Fəaliyyətim performans, istifadə rahatlığı və təmiz interfeys dizaynına fokuslanır. Təcrübəmə interaktiv veb funksiyalarının hazırlanması, istifadəçi axınının optimallaşdırılması və IT Academy Frontend Developer Proqramı çərçivəsində tamamladığım çoxsaylı layihələr vasitəsilə genişlənə bilən həllərin inkişafı daxildir.",
   },
-  education: {},
+  education: {
+    education: "Təhsil",
+    text1:
+      "Texnologiya və mühəndislik sahəsində hərtərəfli akademik və peşəkar təhsil almışam. Azərbaycan Texniki Universitetinin Elektronika, Telekommunikasiya və Radiotexnika fakültəsini bitirərək texniki sistemlər və rabitə texnologiyaları sahəsində möhkəm baza qazanmışam. Həmçinin IT Academy-də 256 saatlıq Frontend Developer Proqramını tamamlamışam və HTML, CSS, JavaScript və React üzrə ixtisaslaşmışam. Tədris müddətində bir neçə real veb layihə hazırlayaraq praktiki kodlaşdırma bacarıqlarımı daha da gücləndirmişəm.",
+    education0: {
+      uni_name: "Azərbaycan Texniki Universiteti",
+      edu_name:
+        "Bakalavr, Elektronika, Telekommunikasiya və Radiotexnika mühəndisliyi",
+      years: "2011-2015",
+      title: {
+        sub_title0:
+          "Azərbaycanın aparıcı texniki universitetlərindən birini bitirərək elektron sistemlər, rabitə texnologiyaları və tətbiqi mühəndislik sahəsində güclü baza qazanmışam.",
+        sub_title1:
+          "Laboratoriya işləri və praktiki tapşırıqlar vasitəsilə analitik düşünmə və problem həll etmə bacarıqlarımı inkişaf etdirmişəm.",
+        sub_title2:
+          "Dövrə dizaynı, telekommunikasiya prinsipləri və mikroprosessor sistemləri üzrə qazandığım biliklər sonradan proqramlaşdırma yanaşmamın əsasını formalaşdırmışdır.",
+      },
+    },
+    education1: {
+      uni_name: "IT Academy",
+      edu_name: "Frontend Developer Sertifikatı",
+      years: "2023",
+      title: {
+        sub_title0:
+          "HTML, CSS, JavaScript və React üzrə 256 saatlıq intensiv Frontend Developer proqramını uğurla tamamlamışam.",
+        sub_title1:
+          "M1, M2, M3, M4 və M5 adlı real layihələr üzərində işləyərək responsiv dizayn, istifadəçi təcrübəsi və təmiz kod yazmaq bacarıqlarımı təkmilləşdirmişəm.",
+        sub_title2:
+          "Bu təcrübə mənə müasir veb texnologiyaları və real dünya layihələrinin inkişaf prosesi haqqında praktiki anlayış qazandırmışdır.",
+      },
+    },
+  },
   projects: {
     projects: "Layihələr",
     text1:

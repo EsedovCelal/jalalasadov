@@ -64,9 +64,41 @@ export default {
     projects: "Projects",
     text2:
       "Dedicated Frontend Developer with hands-on experience crafting dynamic and visually engaging web applications. Skilled in turning complex ideas into intuitive, responsive interfaces using HTML, CSS, JavaScript, and React. Passionate about writing efficient, structured code and continuously enhancing user interaction through clean design and performance optimization.",
-    text3: "",
+    text3:
+      "I specialize in building responsive and efficient front-end applications using HTML, CSS, JavaScript, and React, with a strong focus on performance, usability, and clean interface design. My experience includes creating interactive web features, optimizing user flows, and developing scalable solutions through multiple real-world projects completed during the IT Academy Frontend Developer Program.",
   },
-  education: {},
+  education: {
+    education: "Education",
+    text1:
+      "Completed comprehensive academic and professional training in technology and engineering. Graduated from the Azerbaijan Technical University, Faculty of Electronics, Telecommunications, and Radiotechnics, gaining a solid foundation in technical systems and communication technologies. Additionally, completed a 256-hour Frontend Developer Program at IT Academy, specializing in HTML, CSS, JavaScript, and React, where I developed multiple real-world web projects and strengthened my practical coding expertise.",
+    education0: {
+      uni_name: "Azerbaijan Technical University",
+      edu_name:
+        "Bachelor of Science, Electronics, Telecommunications and Radiotechnics",
+      years: "2011-2015",
+      title: {
+        sub_title0:
+          "Graduated from one of Azerbaijan’s leading technical universities with a strong foundation in electronic systems, communication technologies, and applied engineering.",
+        sub_title1:
+          "Developed analytical thinking and problem-solving abilities through intensive coursework and hands-on lab projects.",
+        sub_title2:
+          "Gained experience in circuit design, telecommunications principles, and embedded system fundamentals, which later shaped my technical approach to software development.",
+      },
+    },
+    education1: {
+      uni_name: "IT Academy",
+      edu_name: "Certificate in Frontend Development",
+      years: "2023",
+      title: {
+        sub_title0:
+          "Completed an intensive 256-hour Frontend Developer program focused on HTML, CSS, JavaScript, and React.",
+        sub_title1:
+          "Built multiple real-world projects — M1, M2, M3, M4, and M5 — emphasizing responsive design, user experience, and clean, maintainable code.",
+        sub_title2:
+          "Enhanced my practical understanding of front-end technologies and modern web development workflows through continuous hands-on learning.",
+      },
+    },
+  },
   projects: {
     projects: "Projects",
     text1:

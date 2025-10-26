@@ -38,17 +38,16 @@ const Experience = () => {
             </p>
           </div>
           <div className="flex justify-center mb-4">
-            <div className="text-[#2980B9] w-15">
+            <div className="text-[#479b9c] w-15">
               <p className="text-6xl font-bold">3+</p>
               <p className="text-3xl font-bold">
                 {translations[language]["experience"]["years"]}
               </p>
             </div>
             <p className="text-5xl font-bold w-15">-</p>
-            <div className=" text-[#2980B9] w-15">
+            <div className=" text-[#479b9c] w-15">
               <p className="text-6xl font-bold">5+</p>
               <p className="text-3xl font-bold">
-                {" "}
                 {translations[language]["experience"]["projects"]}
               </p>
             </div>
@@ -74,17 +73,12 @@ const Experience = () => {
           className="lg:basis-1/3 text-center border-1 border-indigo-500 rounded-md p-6 w-full h-auto"
         >
           <p className="text-lg">
-            I specialize in building robust full stack systems using Java,
-            Node.js, and React, with a strong focus on backend architecture,
-            scalability, and clean integration. My experience includes designing
-            distributed services, automating workflows, and delivering
-            end-to-end solutions that are both maintainable and
-            production-ready.
+            {translations[language]["experience"]["text3"]}
           </p>
         </motion.div>
       </div>
-      <div className="w-full border-2 border-gray-300 hidden md:block mb-[50px]"></div>
-      <motion.div
+      {/*       <div className="w-full border-2 border-gray-300 hidden md:block mb-[50px]"></div> */}
+      {/*       <motion.div
         variants={fadeIn("down", 0)}
         initial="hidden"
         whileInView="show"
@@ -178,7 +172,7 @@ const Experience = () => {
             </li>
           </ul>
         </div>
-      </motion.div>
+      </motion.div> */}
     </Element>
   );
 };
