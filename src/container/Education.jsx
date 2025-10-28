@@ -42,6 +42,7 @@ const Education = () => {
             whileInView="show"
             viewport={{ once: false, amount: 0.7 }}
             key={index}
+            className="mb-[30px] md:mb-[0]"
           >
             <div className="mb-4">
               <p className="text-[#2980B9]">{edu.uni_name}</p>

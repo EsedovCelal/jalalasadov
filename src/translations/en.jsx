@@ -145,7 +145,12 @@ export default {
     },
     view: "View",
   },
-  recommendations: {},
+  recommendations: {
+    recommendations: "Recommendations",
+    text1:
+      "I’m grateful for the professional relationships I’ve built and the positive impact I’ve made along the way. Below are selected recommendations from my friends that highlight my skills, work ethic, and contributions. Their feedback reflects my commitment to delivering quality solutions and fostering effective teamwork.",
+    linkedn: "View on LinkedIn",
+  },
   contact_me: {
     contact_me: "Contact me",
     get_in_touch: "get in touch",

@@ -145,7 +145,12 @@ export default {
     },
     view: "Bax",
   },
-  recommendations: {},
+  recommendations: {
+    recommendations: "Tövsiyyələr",
+    text1:
+      "Qurduğum peşəkar əlaqələrə və bu müddət ərzində göstərdiyim müsbət təsirə görə minnətdaram. Aşağıda dostlarımın mənim bacarıqlarımı, iş etikamı və töhfələrimi vurğulayan seçilmiş tövsiyələri yer alır. Onların rəyləri keyfiyyətli həllər təqdim etməyə və səmərəli komandali əməkdaşlığı inkişaf etdirməyə olan sadiqliyimi əks etdirir.",
+    linkedn: "Linkedində göstər",
+  },
   contact_me: {
     contact_me: "Mənimlə əlaqə",
     get_in_touch: "əlaqə saxla",
