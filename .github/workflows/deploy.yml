@@ -17,15 +17,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          clean: true # Force clean checkout
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          # Removed cache to force fresh install
 
-      - name: Clean npm cache
-        run: npm cache clean --force
+      - name: Verify package-lock.json content
+        run: |
+          echo "Checking picomatch version in package-lock.json:"
+          grep -A 2 '"picomatch"' package-lock.json | head -5
+          echo "Checking yaml version in package-lock.json:"
+          grep -A 2 '"yaml"' package-lock.json | head -5
 
       - name: Install dependencies
         run: npm ci
