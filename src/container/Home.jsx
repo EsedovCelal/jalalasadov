@@ -44,7 +44,7 @@ const Home = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.7 }}
-              className="text-[1.2rem] text-base leading-normal mb-[15px]"
+              className="text-[1rem] text-base leading-normal mb-[15px]"
             >
               {translations[language]["home"]["text2"]}
             </motion.div>

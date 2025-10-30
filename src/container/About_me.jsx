@@ -17,16 +17,16 @@ const About_me = () => {
           variants={fadeIn("right", 0)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.7 }}
-          className="md:flex md:flex-col place-content-around mr-[40px] md:w-[60%] text-center md:text-left "
+          viewport={{ once: false, amount: 0.1 }}
+          className="md:flex md:flex-col place-content-around md:w-[60%] text-center md:text-left "
         >
           <span className="text-[3.25rem] capitalize">
             {translations[language]["about_me"]["about_me"]}
           </span>
-          <span className="md:inline block">
+          <span className="md:inline block text-[1rem]">
             {translations[language]["about_me"]["text1"]}
           </span>
-          <span className="md:inline block mb-[30px]">
+          <span className="md:inline block mb-[30px] text-[1rem]">
             {translations[language]["about_me"]["text2"]}
           </span>
           <Link to="Projects" smooth={true} duration={900}>
