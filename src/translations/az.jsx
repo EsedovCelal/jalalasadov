@@ -10,7 +10,7 @@ export default {
   },
   home: {
     text1: "Program mühəndisi | Veb infetfeys tərtibatçısı",
-    Jalal: "Cəlal",
+    Jalal: "Cahad",
     Asadov: "Əsədov",
     text2:
       "Mezun – Azərbaycan Texniki Universiteti, Elektronika, Telekommunikasiya və Radiotexnika mühəndisliyi fakültəsi. IT Academy-dən Frontend Developer Certificate (256 saat, HTML, CSS, JavaScript, React). Veb interfeyslərin qurulması və müasir texnologiyalarla işləməyə dair fundamental biliklər.",
