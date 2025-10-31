@@ -1,10 +1,10 @@
-import jalalasadov from "../assets/img/jalalasadov.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "../tools/motion2";
 import { Element } from "react-scroll";
 import translations from "../translations";
 import { useSelector } from "react-redux";
 import Line_Text from "./Text_Line";
+import Img from "./img";
 
 const Home = () => {
   const language = useSelector((state) => state.language.defaultLanguage);
@@ -54,12 +54,8 @@ const Home = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.7 }}
-            className={styles.section_one_img_box}
           >
-            <img
-              src={jalalasadov}
-              className="w-full max-w-md h-auto mx-auto bg-[#111] relative z-[99] rounded-[10px] object-cover object-left"
-            />
+            <Img />
           </motion.div>
         </div>
         <Line_Text />
