@@ -1,5 +1,5 @@
 import jalalasadov from "../assets/img/jalalasadov.png";
-const Img = () => {
+const Image_For_Home = () => {
   return (
     <div>
       <div className="relative">
@@ -40,4 +40,4 @@ const Img = () => {
     </div>
   );
 };
-export default Img;
+export default Image_For_Home;

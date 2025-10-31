@@ -4,7 +4,7 @@ import { Element } from "react-scroll";
 import translations from "../translations";
 import { useSelector } from "react-redux";
 import Line_Text from "./Text_Line";
-import Img from "./img";
+import Image_For_Home from "./img";
 
 const Home = () => {
   const language = useSelector((state) => state.language.defaultLanguage);
@@ -55,7 +55,7 @@ const Home = () => {
             whileInView="show"
             viewport={{ once: false, amount: 0.7 }}
           >
-            <Img />
+            <Image_For_Home />
           </motion.div>
         </div>
         <Line_Text />
