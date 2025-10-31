@@ -36,7 +36,7 @@ const Contact_me = () => {
   return (
     <Element
       name="Contact me"
-      className="text-[#EEEEEE] pt-[120px] pb-[80px] px-8"
+      className="text-[#EEEEEE] pt-[60px] md:pt-[120px] pb-20 px-8"
     >
       <div className="text-center">
         <p className="normal-case text-6xl">

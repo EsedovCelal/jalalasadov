@@ -20,13 +20,16 @@ const Education = () => {
     setEdu_list(list);
   }, [language]);
   return (
-    <Element name="Education" className="text-[white] px-8 pt-[120px]">
+    <Element
+      name="Education"
+      className="text-[white] px-8 pt-[60px] md:pt-[120px]"
+    >
       <motion.div
         variants={fadeIn("down", 0)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.7 }}
-        className="text-center mb-[80px]"
+        viewport={{ once: false, amount: 0.1 }}
+        className="text-center mb-20"
       >
         <p className="text-[60px]">
           {translations[language]["education"]["education"]}

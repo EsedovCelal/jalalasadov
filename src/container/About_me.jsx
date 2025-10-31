@@ -10,9 +10,9 @@ const About_me = () => {
   return (
     <Element
       name="About me"
-      className="flex justify-center px-8 text-[#EEEEEE] pt-[120px]"
+      className="flex justify-center px-8 text-[#EEEEEE] pt-[30px] md:pt-[120px]"
     >
-      <div className="md:flex justify-between md:h-[500px] mb-[30px] lg:mb-[0]">
+      <div className="md:flex justify-between md:h-[500px] mb-[30px] lg:mb-0">
         <motion.div
           variants={fadeIn("right", 0)}
           initial="hidden"
@@ -30,13 +30,13 @@ const About_me = () => {
             {translations[language]["about_me"]["text2"]}
           </span>
           <Link to="Projects" smooth={true} duration={900}>
-            <button className=" mb-[30px] h-[40px] w-[150px] cursor-pointer text-[#EEEEEE] outline-[#EEEEEE] hover:bg-[#479b9c] hover:text-indigo-600 capitalize transition-all outline-1 rounded-[5px] ">
+            <button className=" mb-[30px] h-10 w-[150px] cursor-pointer text-[#EEEEEE] outline-[#EEEEEE] hover:bg-[#479b9c] hover:text-indigo-600 capitalize transition-all outline-1 rounded-[5px] ">
               {translations[language]["about_me"]["my_projects"]}
             </button>
           </Link>
         </motion.div>
         <motion.div
-          variants={fadeIn("left", 0)}
+          variants={fadeIn("down", 0)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.7 }}

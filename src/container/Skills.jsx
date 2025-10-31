@@ -31,7 +31,10 @@ const Skills = () => {
   ];
   const skills = [translations[language]["skills"]["items"]];
   return (
-    <Element name="Skills" className="flex justify-center pt-[120px]">
+    <Element
+      name="Skills"
+      className="flex justify-center md:pt-[120px] pt-[60px]"
+    >
       <div className="mx-[50px] max-w-[1000px]">
         <div className="flex justify-center text-[white]">
           <div>

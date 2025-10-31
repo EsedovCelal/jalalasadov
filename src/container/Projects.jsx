@@ -17,7 +17,10 @@ const Projects = () => {
     setProjectList(list);
   }, [language]);
   return (
-    <Element name="Projects" className="text-[#EEEEEE] px-8  pt-[120px]">
+    <Element
+      name="Projects"
+      className="text-[#EEEEEE] px-8  pt-[60px] md:pt-[120px]"
+    >
       <motion.div
         variants={fadeIn("down", 0)}
         initial="hidden"

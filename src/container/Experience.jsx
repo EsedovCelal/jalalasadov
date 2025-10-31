@@ -37,17 +37,17 @@ const Experience = () => {
               {translations[language]["experience"]["since"]}
             </p>
           </div>
-          <div className="flex justify-center mb-4">
-            <div className="text-[#479b9c] w-15">
-              <p className="text-6xl font-bold">3+</p>
-              <p className="text-3xl font-bold">
+          <div className="flex justify-center items-center mb-4">
+            <div className=" w-15 justify-center">
+              <p className="text-[#479b9c] text-6xl font-bold">3+</p>
+              <p className="text-xl font-bold uppercase">
                 {translations[language]["experience"]["years"]}
               </p>
             </div>
             <p className="text-5xl font-bold w-15">-</p>
-            <div className=" text-[#479b9c] w-15">
-              <p className="text-6xl font-bold">5+</p>
-              <p className="text-3xl font-bold">
+            <div className="  w-15">
+              <p className="text-[#479b9c] text-6xl font-bold">5+</p>
+              <p className="text-xl font-bold uppercase">
                 {translations[language]["experience"]["projects"]}
               </p>
             </div>
