@@ -29,7 +29,7 @@ const Navbar = () => {
   };
   return (
     <div className="flex justify-center fixed top-0 left-0 w-full z-50 md:px-8 px-2">
-      <div className="w-full mx-auto max-w-[1300px] backdrop-blur-md flex justify-between items-center px-[10px] py-[0] border-[1px] border-[#3E5F44] rounded-[10px] mt-[5px]">
+      <div className="w-full mx-auto max-w-[1300px] backdrop-blur-md flex justify-between items-center px-[10px] py-0 border border-[#3E5F44] rounded-[10px] mt-[5px]">
         <Link to="Home" smooth={true} duration={900}>
           <img src={logo} className="w-[100px] h-[100px] cursor-pointer" />
         </Link>

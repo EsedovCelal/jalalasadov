@@ -40,12 +40,16 @@ const About_me = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.7 }}
-          className="flex md:flex-col place-content-around "
+          className="flex md:flex-col  justify-center"
         >
-          <img
-            src={jalalasadov}
-            className="img_about_me object-cover object-left"
-          />
+          <div className="absolute bg-linear-to-br from-red-500 via-red-600 to-red-700 w-[260px] h-[400px] rounded-[80px] rotate-6 blur-sm opacity-60"></div>
+          <div className="relative w-[260px] h-[400px] rounded-[80px] overflow-hidden shadow-2xl">
+            <img
+              src={jalalasadov}
+              alt="jalalasadov"
+              className="w-full h-full object-cover transform hover:scale-105 transition duration-500"
+            />
+          </div>
         </motion.div>
       </div>
     </Element>
