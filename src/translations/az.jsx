@@ -9,7 +9,7 @@ export default {
     Recommendations: "Tövsiyələr",
   },
   home: {
-    text1: "Program mühəndisi | Veb infetfeys tərtibatçısı",
+    text1: "Program mühəndisi | Veb inferfeys tərtibatçısı",
     Jalal: "Cəlal",
     Asadov: "Əsədov",
     text2:
@@ -155,7 +155,7 @@ export default {
     contact_me: "Mənimlə əlaqə",
     get_in_touch: "əlaqə saxla",
     text1:
-      "Əməkdaşlıq etmək, layihə sorğuları üçün və ya sadəcə salam vermək belə olsa əlaqə saxlamaqdan çekinmeyin. Həmişə yeni imkanları müzakirə etməyə və fikir mübadiləsi aparmağa açığım.",
+      "Əməkdaşlıq etmək, layihə sorğuları üçün və ya sadəcə salam vermək belə olsa əlaqə saxlamaqdan çəkinmeyin. Həmişə yeni imkanları müzakirə etməyə və fikir mübadiləsi aparmağa açığım.",
     your_name: "adınız",
     your_email: "e-poçtunuz",
     your_message: "mesajınız",
