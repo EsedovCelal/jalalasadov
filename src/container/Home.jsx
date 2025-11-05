@@ -8,10 +8,6 @@ import jalalasadov from "../assets/img/jalalasadov.png";
 
 const Home = () => {
   const language = useSelector((state) => state.language.defaultLanguage);
-  const styles = {
-    section_one_img_box:
-      "relative z-20 overflow-clip rounded-[10px] p-[5px] after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:rotate-45 after:h-[600px] after:w-[200px] after:bg-[#eeeeee] after:shadow-[0_0_10px_white,0_0_40px_white,0_0_80px_white] after:animate-[animate_10s_linear_infinite]",
-  };
   return (
     <Element name="Home" className="px-8">
       <div className="pt-[15vh] md:pt-[10vh] text-[#EEEEEE]">

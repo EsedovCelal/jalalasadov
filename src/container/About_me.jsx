@@ -10,7 +10,7 @@ const About_me = () => {
   return (
     <Element
       name="About me"
-      className="flex justify-center px-8 text-[#EEEEEE] pt-[30px] md:pt-[120px]"
+      className="flex justify-center px-8 text-[#EEEEEE] pt-[120px]"
     >
       <div className="md:flex justify-between md:h-[500px] mb-[30px] lg:mb-0">
         <motion.div

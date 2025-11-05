@@ -20,10 +20,7 @@ const Education = () => {
     setEdu_list(list);
   }, [language]);
   return (
-    <Element
-      name="Education"
-      className="text-[white] px-8 pt-[60px] md:pt-[120px]"
-    >
+    <Element name="Education" className="text-[white] px-8 pt-[120px]">
       <motion.div
         variants={fadeIn("down", 0)}
         initial="hidden"
